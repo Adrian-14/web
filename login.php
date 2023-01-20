@@ -72,6 +72,13 @@
             <input type="password" class="form-control" id="floatingInput" placeholder="Contraseña">
             <label for="floatingInput">password</label>
         </div>
+        <div class="checkbox mb-3">
+            <label for="">
+                <input type="checkbox" value="remember-me"> Recordar
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar</button>
+        <p class="mt-5 mb-3 text-muted">&copy;2023</p>
     </form>
   </main>
   <footer>
