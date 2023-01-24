@@ -2,10 +2,10 @@
 
 $servername = 'localhost';
 $user = 'root';
-$pass = ' ';
-$database = 'tienda';
+$pass = '';
+$database = 'database';
 
-$conn = mysqli_connect($servername,$user,$pass);
+$conn = mysqli_connect($servername,$user,$pass,$database);
 if(!$conn){
     die('Error : ' .mysqli_connect_errno());
 }

@@ -80,16 +80,16 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form>
+  <form action="validar.php" method="post">
     <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Login</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
       <label for="floatingInput">Example@gmail.com</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="clave" required>
       <label for="floatingPassword">Clave de Acceso</label>
     </div>
 
