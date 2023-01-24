@@ -10,6 +10,5 @@ if(!$conn){
     die('Error : ' .mysqli_connect_errno());
 }
 echo 'Conexion Exitosa';
-$conn->close();
 
 ?>
