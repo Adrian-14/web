@@ -86,7 +86,7 @@
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
-      <label for="floatingInput">Example@gmail.com</label>
+      <label for="floatingInput">Correo</label>
     </div>
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="clave" required>
