@@ -83,7 +83,6 @@
   <form action="validar.php" method="post">
     <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Login</h1>
-
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
       <label for="floatingInput">Correo</label>
@@ -98,12 +97,9 @@
         <input type="checkbox" value="remember-me"> Recordar
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-success" type="submit">Iniciar</button>
+    <button class="w-100 btn btn-lg btn-success" type="submit" value="ingresar">Iniciar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
-  </form>
-  <div class="alert alert-danger" role="alert" name="alert">
-  Datos Incorrectos!
-</div>
+    </form>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

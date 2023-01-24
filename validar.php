@@ -13,7 +13,14 @@ $filas=mysqli_num_rows($respuesta);
 if($filas > 0){
     header("location:controlpanel.php");
 }else{
-    echo "Error al Ingresar";
+    ?>
+    <?php
+    include("login.php");
+    ?>
+    <div class="alert alert-danger" role="alert" id="alert">
+        Datos Incorrectos!
+    </div>
+    <?php
 }
 mysqli_free_result($respuesta);
 mysqli_close($conn);
