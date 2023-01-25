@@ -1,3 +1,12 @@
+<?php
+session_start();
+$varsesion = $_SESSION['user'];
+if($varsesion == null || $varsesion = ''){
+  echo 'Aceeso no autorizado';
+  die();
+}
+?>
+
 <!doctype html>
 <html lang="es">
 
@@ -18,7 +27,9 @@
     <!-- place navbar here -->
   </header>
   <main>
-    <h1>Bienvenido al Panel de control</h1>
+    <h1 class="text-center fw-bold">Bienvenido al Panel de control</h1>
+    <h2>Administrador: <?php echo $_SESSION['user']?></h2>
+    <a href="cerrar_sesion.php">Cerrar Sesion</a>
   </main>
   <footer>
     <!-- place footer here -->

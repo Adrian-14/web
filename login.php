@@ -82,7 +82,7 @@
 <main class="form-signin w-100 m-auto">
   <form action="validar.php" method="post">
     <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Login</h1>
+    <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
       <label for="floatingInput">Correo</label>

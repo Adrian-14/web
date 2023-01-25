@@ -1,4 +1,7 @@
 <?php
+session_start();
+$_SESSION['user'] = $user;
+header("location:controlpanel.php");
 
 include "conn.php";
 
