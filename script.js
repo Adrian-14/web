@@ -13,7 +13,7 @@
         form.classList.add('was-validated')
       }, false)
     })
-  })()
+  })();
 
   $(document).ready(function(){
     $("#alertSI").hide();
