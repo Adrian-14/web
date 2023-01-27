@@ -17,11 +17,7 @@ if($array['contar'] > 0){
     <?php
     include("login.php");
     ?>
-    <div class="alert alert-danger d-flex align-items-center" role="alert">
-        <div>
-            Credenciales Incorrectas
-        </div>
-    </div>
+    <div id="alertNO" class="alert alert-danger" role="alert">Acceso denegado</div>
     <?php
 }
 mysqli_free_result($respuesta);
