@@ -16,4 +16,3 @@
       }, false)
     })
   })()
-  const bsAlert = new bootstrap.Alert('#myAlert')
