@@ -9,7 +9,7 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form action="validar.php" method="post" class="needs-validation" novalidate>
+  <form action="validar.php" method="post" class="needs-validation" id="form1" novalidate>
     <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Iniciar</h1>
     <div class="form-floating">
@@ -24,7 +24,9 @@
       <div class="valid-feedback">Excelente</div>
       <div class="invalid-feedback">Es necesario poner Contraseña</div>
     </div>
-    <button class="w-100 btn btn-lg btn-success" type="submit" value="ingresar">Iniciar</button>
+    <div id="alertSI" class="alert alert-success alert-dismissible fade show" role="alert">Acceso</div>
+    <div id="alertNO" class="alert alert-danger" role="alert">Acceso denegado</div>
+    <button id="btnlogin" class="w-100 btn btn-lg btn-success" type="submit" value="ingresar">Iniciar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
     </form>
 </main>
