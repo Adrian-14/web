@@ -24,11 +24,11 @@
       <div class="valid-feedback">Excelente</div>
       <div class="invalid-feedback">Es necesario poner Contraseña</div>
     </div>
-    <script src="script.js"></script>
     <button id="btnlogin" class="w-100 btn btn-lg btn-success" type="submit" value="ingresar">Iniciar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
     </form>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
