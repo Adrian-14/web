@@ -7,7 +7,6 @@ if(!isset($user)){
   
 }
 ?>
-
 <!doctype html>
 <html lang="es">
 
@@ -24,11 +23,26 @@ if(!isset($user)){
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    <h1 class="text-center fw-bold">Bienvenido al Panel de control</h1>
+  <main class="d-flex flex-nowrap">
+    <h1 class="visually-hidden">Bienvenido al Panel de control</h1>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <img src="svg.png" alt="logo">
+        <span class="fs-4">Control Escolar</span>
+      </a>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <h2>Administrador: <?php echo $_SESSION['user']?></h2>
     <a href="cerrar_sesion.php">Cerrar Sesion</a>
   </main>
