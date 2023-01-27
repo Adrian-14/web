@@ -17,7 +17,6 @@ if($array['contar'] > 0){
     <?php
     include("login.php");
     ?>
-    <div id="alertNO" class="alert alert-danger" role="alert">Acceso denegado</div>
     <?php
 }
 mysqli_free_result($respuesta);

@@ -8,7 +8,7 @@ body {
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url("svg.png");
+  background-color: rgb(240, 240, 240);
 }
 
 .form-signin {
