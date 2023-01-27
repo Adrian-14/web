@@ -1,8 +1,3 @@
-<?php
-session_start();
-?>
-
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -20,16 +15,12 @@ session_start();
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
       <label for="floatingInput">Correo</label>
+      <div class="valid-feedback">Correcto</div>
+      <div class="invalid-feedback">Invalido</div>
     </div>
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="clave" required>
       <label for="floatingPassword">Clave de Acceso</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Recordar
-      </label>
     </div>
     <button class="w-100 btn btn-lg btn-success" type="submit" value="ingresar">Iniciar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023</p>

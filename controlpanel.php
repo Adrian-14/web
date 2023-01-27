@@ -1,9 +1,10 @@
 <?php
 session_start();
-$varsesion = $_SESSION['user'];
-if($varsesion == null || $varsesion = ''){
-  echo 'Aceeso no autorizado';
-  die();
+$user = $_SESSION['user'];
+if(!isset($user)){
+  header("location:login.php");
+}else{
+  
 }
 ?>
 

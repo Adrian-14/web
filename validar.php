@@ -1,26 +1,23 @@
 <?php
+require "conn.php";
 session_start();
-$_SESSION['user'] = $user;
-header("location:controlpanel.php");
-
-include "conn.php";
 
 $user=$_POST['user'];
 $clave=$_POST['clave'];
 
-$consulta="SELECT * FROM login WHERE email='$user' and clave='$clave'";
+$consulta="SELECT COUNT(*) as contar FROM login WHERE email='$user' and clave='$clave'";
 $respuesta=mysqli_query($conn, $consulta);
+$array=mysqli_fetch_array($respuesta);
 
-$filas=mysqli_num_rows($respuesta);
-
-if($filas > 0){
+if($array['contar'] > 0){
+    $_SESSION['user'] = $user;
     header("location:controlpanel.php");
 }else{
     ?>
     <?php
     include("login.php");
     ?>
-    <div class="alert alert-danger" role="alert" id="alert">
+    <div class="alert alert-danger" role="alert">
         Datos Incorrectos!
     </div>
     <?php
