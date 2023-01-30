@@ -130,6 +130,48 @@ if(!isset($user)){
             </div>
           </div>
         </div>
+        <div class="col-12 col-lg-6 col-xl">
+          <div class="card">
+            <div class="card-body">
+              <div class="row align-items-center gx-0">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted mb-2">
+                    Alumnos
+                  </h6>
+                  <span class="h2 mb-0">20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl">
+          <div class="card">
+            <div class="card-body">
+              <div class="row align-items-center gx-0">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted mb-2">
+                    Alumnos
+                  </h6>
+                  <span class="h2 mb-0">20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl">
+          <div class="card">
+            <div class="card-body">
+              <div class="row align-items-center gx-0">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted mb-2">
+                    Alumnos
+                  </h6>
+                  <span class="h2 mb-0">20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
