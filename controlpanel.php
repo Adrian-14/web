@@ -22,7 +22,7 @@ if(!isset($user)){
 <body>
   <main class="d-flex flex-nowrap">
     <h1 class="visually-hidden">Bienvenido al Panel de control</h1>
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+    <div class="d-flex flex-column p-3 text-bg-dark" style="width: 280px;">
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <img class="bi pe-none me-2" width="40" height="32" src="bootstrap-logo.svg" alt="logo">
         <span class="fs-4">Control Escolar</span>
@@ -78,24 +78,27 @@ if(!isset($user)){
       <hr>
       <div class="dropdown">
         <a href="#" class="d-flex align-items-center tex-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="myAvatar.png" class="img-circle" width="50px" height="50px" alt="avatar">
+          <img src="myAvatar.png" class="rounded-circle" width="32px" height="32px" alt="avatar">
+          <strong><?php echo $_SESSION['user']?></strong>
         </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li>
+            <a class="dropdown-item" href="#">Ajustes</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Perfil</a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item" href="cerrar_sesion.php">Cerrar Sesion</a>
+          </li>
+        </ul>
       </div>
     </div>
+    <div class="b-example-divider"></div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <h2>Administrador: <?php echo $_SESSION['user']?></h2>
-    <a href="cerrar_sesion.php">Cerrar Sesion</a>
   </main>
   <footer>
     <!-- place footer here -->
