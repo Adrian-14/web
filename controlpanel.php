@@ -22,7 +22,6 @@ if(!isset($user)){
 
 <body>
   <main class="d-flex flex-nowrap">
-    <h1 class="visually-hidden">Bienvenido al Panel de control</h1>
     <div class="d-flex flex-column p-3 text-bg-dark" style="width: 280px;">
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <img class="bi pe-none me-2" width="40" height="32" src="bootstrap-logo.svg" alt="logo">
