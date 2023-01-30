@@ -88,7 +88,7 @@ body {
   .fw-semibold { font-weight: 600; }
   .lh-tight { line-height: 1.25; }
   
-  .header {
+.header {
     --bs-header-margin-bottom: 2rem;
     --bs-header-spacing-y: 1.5rem;
     --bs-header-body-border-width: 1px;
@@ -102,7 +102,7 @@ body {
   padding-top: var(--bs-header-spacing-y);
 }
 .header-pretitle {
-  color: var(--bs-gray-600);
+  color: #6e84a3;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -111,4 +111,7 @@ body {
 }
 .lift {
   transition: box-shadow .25s ease,transform .25s ease;
+}
+.align-items-end {
+  align-items: flex-end!important;
 }
