@@ -99,7 +99,21 @@ if(!isset($user)){
       </div>
     </div>
     <div class="b-example-divider"></div>
-    
+    <div class="header">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-end">
+            <div class="col">
+              <h6 class="header-pretitle">Inicio</h6>
+              <h1 class="header-title">Administrador</h1>
+            </div>
+            <div class="col-auto">
+              <a href="cerrar_sesion.php" class="btn btn-primary lift">Cerrar Sesion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
