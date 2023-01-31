@@ -103,6 +103,7 @@ if (!isset($user)) {
                             <div class="row">
                                 <form action="#" method="post">
                                     <div class="row">
+                                        <h2 class="display-6">Datos del Estudiante</h2>
                                         <div class="col">
                                             <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="First name">
                                         </div>
@@ -116,13 +117,38 @@ if (!isset($user)) {
                                     <br>
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="Genero" aria-label="Last name">
+                                            <input type="text" class="form-control" placeholder="Edad" aria-label="Last name">
                                         </div>
                                         <div class="col">
                                             <input type="text" class="form-control" placeholder="Nacionalidad" aria-label="Last name">
                                         </div>
                                         <div class="col">
                                             <input type="text" class="form-control" placeholder="Grado de Estudios" aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <h3 class="display-5">Datos de Escuela</h3>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="ciclo escolar" aria-label="Last name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Grado" aria-label="Last name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Periodo Escolar" aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Categoria" aria-label="Last name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Grado" aria-label="Last name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Periodo Escolar" aria-label="Last name">
                                         </div>
                                     </div>
                                 </form>
