@@ -27,10 +27,11 @@ if (!isset($user)) {
             <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
             </a>
+            <hr>
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
               <li class="nav-item">
-                <a href="controlpanel.php" class="nav-link align-middle px-0">
-                <i class="bi bi-house-fill"></i><span class="ms-1 d-none d-sm-inline">Inicio</span>
+                <a href="controlpanel.php" class="nav-link align-middle px-0 active">
+                <i class="bi bi-house-fill"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
                 </a>
               </li>
               <li>
@@ -89,8 +90,8 @@ if (!isset($user)) {
                 <div class="header-body">
                   <div class="row align-items-end row">
                     <div class="col">
-                      <h6 class="header-pretitle">Inicio</h6>
-                      <h1 class="header-title">Control Panel</h1>
+                      <h6 class="header-pretitle fw-3">Inicio</h6>
+                      <h1 class="header-title fs-3">Control Panel</h1>
                     </div>
                     <div class="col-auto">
                       <button class="lift btn btn-primary" type="button">Cerrar Sesion</button>

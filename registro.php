@@ -27,9 +27,9 @@ if (!isset($user)) {
                         <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                             <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px">control panel</span>
                         </a>
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-auto align-items-center align-items-sm-start" id="menu">
                             <li class="nav-item">
-                                <a href="controlpanel.php" class="nav-link align-middle px-0">
+                                <a href="controlpanel.php" class="nav-link text-white align-middle px-0">
                                     <i class="bi bi-house-fill"></i><span class="ms-1 d-none d-sm-inline">Inicio</span>
                                 </a>
                             </li>
@@ -40,7 +40,7 @@ if (!isset($user)) {
                             </li>
                             <li>
                                 <a href="registro.php" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-calendar3"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
+                                    <i class="bi bi-calendar3"></i><span class="ms-1 d-none d-sm-inline active">Registro</span></a>
                             </li>
                             <li>
                                 <a href="#" class="nav-link px-0 align-middle">
