@@ -31,7 +31,7 @@ if (!isset($user)) {
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
               <li class="nav-item">
                 <a href="controlpanel.php" class="nav-link align-middle px-0 active">
-                <i class="bi bi-house-fill"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
+                <i class="bi bi-house-fill me-2"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
                 </a>
               </li>
               <li>
@@ -61,7 +61,7 @@ if (!isset($user)) {
               </li>
               <li>
                 <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-person-square"></i><span class="ms-1 d-none d-sm-inline text-white">Instructor</span> </a>
+                <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Instructor</span> </a>
               </li>
             </ul>
             <hr>
