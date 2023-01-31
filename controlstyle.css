@@ -32,7 +32,9 @@ body {
     pointer-events: none;
     fill: currentColor;
   }
-  
+  .bi::before{
+    color: #fff;
+  }
   .dropdown-toggle { outline: 0; }
   
   .nav-flush .nav-link {
