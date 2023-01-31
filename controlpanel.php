@@ -36,32 +36,32 @@ if (!isset($user)) {
               </li>
               <li>
                 <a href="#" class="nav-link align-middle px-0">
-                <i class="bi bi-people-fill"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
+                <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Alumnos</span>
                 </a>
               </li>
               <li>
                 <a href="registro.php" class="nav-link px-0 align-middle">
-                <i class="bi bi-calendar3"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
+                <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Registro</span></a>
               </li>
               <li>
                 <a href="#" class="nav-link px-0 align-middle">
-                  <i class="bi bi-table"></i> <span class="ms-1 d-none d-sm-inline">Asistencia</span></a>
+                  <i class="bi bi-table me-2"></i> <span class="ms-1 d-none d-sm-inline text-white">Asistencia</span></a>
               </li>
               <li>
                 <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-clipboard2-check-fill"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
+                <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Calificaciones</span></a>
               </li>
               <li>
                 <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-card-checklist"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
+                <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Kardex</span> </a>
               </li>
               <li>
                 <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-briefcase-fill"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
+                <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Disiplinas</span> </a>
               </li>
               <li>
                 <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-person-square"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
+                <i class="bi bi-person-square"></i><span class="ms-1 d-none d-sm-inline text-white">Instructor</span> </a>
               </li>
             </ul>
             <hr>
@@ -94,7 +94,8 @@ if (!isset($user)) {
                       <h1 class="header-title fs-3">Control Panel</h1>
                     </div>
                     <div class="col-auto">
-                      <button class="lift btn btn-primary" type="button">Cerrar Sesion</button>
+                      <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
+                      <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user'];?></span>
                     </div>
                   </div>
                 </div>
