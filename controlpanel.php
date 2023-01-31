@@ -25,7 +25,7 @@ if (!isset($user)) {
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
           <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
             <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              <span class="fs-5 d-none d-sm-inline"><img src="/bootstrap-logo.svg" alt="logo" width="50px" height="50px"> Control Panel</span>
+              <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
             </a>
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
               <li class="nav-item">
@@ -66,7 +66,7 @@ if (!isset($user)) {
             <hr>
             <div class="dropdown pb-4">
               <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="/myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
+                <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
                 <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user'];?></span>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
@@ -81,8 +81,85 @@ if (!isset($user)) {
             </div>
           </div>
         </div>
+        <div class="b-example-divider"></div>
         <div class="col py-3">
-          Content area...
+          <div class="main-content">
+            <div class="header">
+              <div class="container-fluid">
+                <div class="header-body">
+                  <div class="row align-items-end row">
+                    <div class="col">
+                      <h6 class="header-pretitle">Inicio</h6>
+                      <h1 class="header-title">Control Panel</h1>
+                    </div>
+                    <div class="col-auto">
+                      <button class="lift btn btn-primary" type="button">Cerrar Sesion</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="align-items-center row">
+                        <div class="col">
+                          <h6 class="text-uppercase text-muted mb-2">
+                            Total
+                          </h6>
+                          <span class="h2 mb-0">Alumnos</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="align-items-center row">
+                        <div class="col">
+                          <h6 class="text-uppercase text-muted mb-2">
+                            Total
+                          </h6>
+                          <span class="h2 mb-0">Alumnos</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="align-items-center row">
+                        <div class="col">
+                          <h6 class="text-uppercase text-muted mb-2">
+                            Total
+                          </h6>
+                          <span class="h2 mb-0">Alumnos</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="align-items-center row">
+                        <div class="col">
+                          <h6 class="text-uppercase text-muted mb-2">
+                            Total
+                          </h6>
+                          <span class="h2 mb-0">Alumnos</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
