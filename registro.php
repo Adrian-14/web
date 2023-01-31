@@ -104,33 +104,73 @@ if (!isset($user)) {
                                 <form action="#" method="post">
                                     <div class="row">
                                         <h2 class="display-6">Datos del Estudiante</h2>
-                                        <div class="col">
-                                            <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="First name">
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Subir Foto</label>
+                                            <input class="form-control" type="file" id="formFile">
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="Last name">
+                                            <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="Last name">
+                                            <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="1erapellido">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
                                         </div>
                                     </div>
                                     <br>
                                     <div class="row">
-                                        <div class="col">
-                                            <input type="text" class="form-control" placeholder="Edad" aria-label="Last name">
+                                    <div class="col">
+                                            <label for="inputState" class="form-label">Edad</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Seleccione...</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                            </select>
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="Nacionalidad" aria-label="Last name">
+                                            <label for="inputState" class="form-label">Nacionalidad</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Seleccione...</option>
+                                                <option value="mexicana">Mexicana</option>
+                                                <option value="extranjera">Estranjero</option>
+                                            </select>
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="Grado de Estudios" aria-label="Last name">
+                                            <label for="inputState" class="form-label">Grado de Estudios</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Seleccione...</option>
+                                                <option value="Primaria">Primaria</option>
+                                                <option value="Secundaria">Secundaria</option>
+                                                <option value="Bachillerato">Bachillerato</option>
+                                                <option value="Universidad">Universidad</option>
+                                                <option value="Otro">Otro</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <br>
                                     <div class="row">
                                         <h3 class="display-5">Datos de Escuela</h3>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="ciclo escolar" aria-label="Last name">
+                                            <label for="inputState" class="form-label">Ciclo Escolar</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Seleccione</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                            </select>
                                         </div>
                                         <div class="col">
                                             <input type="text" class="form-control" placeholder="Grado" aria-label="Last name">
@@ -145,7 +185,7 @@ if (!isset($user)) {
                                             <input type="text" class="form-control" placeholder="Categoria" aria-label="Last name">
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="Grado" aria-label="Last name">
+                                            <input type="text" class="form-control" placeholder="Matricula" aria-label="Last name">
                                         </div>
                                         <div class="col">
                                             <input type="text" class="form-control" placeholder="Periodo Escolar" aria-label="Last name">
