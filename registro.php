@@ -25,42 +25,43 @@ if (!isset($user)) {
                 <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
                     <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                         <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                            <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px">control panel</span>
+                            <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
                         </a>
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-auto align-items-center align-items-sm-start" id="menu">
+                        <hr>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li class="nav-item">
-                                <a href="controlpanel.php" class="nav-link text-white align-middle px-0">
-                                    <i class="bi bi-house-fill"></i><span class="ms-1 d-none d-sm-inline">Inicio</span>
+                                <a href="controlpanel.php" class="nav-link text-white">
+                                    <i class="bi bi-house-fill me-2"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link align-middle px-0">
-                                    <i class="bi bi-people-fill"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="registro.php" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-calendar3"></i><span class="ms-1 d-none d-sm-inline active">Registro</span></a>
+                                <a href="registro.php" class="nav-link text-white active">
+                                    <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-table"></i> <span class="ms-1 d-none d-sm-inline">Asistencia</span></a>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi bi-table me-2"></i> <span class="ms-1 d-none d-sm-inline">Asistencia</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-clipboard2-check-fill"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-card-checklist"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-briefcase-fill"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-person-square"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
                             </li>
                         </ul>
                         <hr>
@@ -120,7 +121,7 @@ if (!isset($user)) {
                                     </div>
                                     <br>
                                     <div class="row">
-                                    <div class="col">
+                                        <div class="col">
                                             <label for="inputState" class="form-label">Edad</label>
                                             <select id="inputState" class="form-select">
                                                 <option selected>Seleccione...</option>

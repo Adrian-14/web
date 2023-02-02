@@ -21,16 +21,16 @@ if (!isset($user)) {
 <body>
   <header>
     <div class="container-fluid">
-      <div class="row flex-nowrap scrollarea">
+      <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <div class="menuLateral d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
             <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
               <li class="nav-item">
-                <a href="controlpanel.php" class="nav-link align-middle px-0 active">
+                <a href="controlpanel.php" class="nav-link active">
                 <i class="bi bi-house-fill me-2"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
                 </a>
               </li>
@@ -40,28 +40,28 @@ if (!isset($user)) {
                 </a>
               </li>
               <li>
-                <a href="registro.php" class="nav-link">
-                <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Registro</span></a>
+                <a href="registro.php" class="nav-link text-white">
+                <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                  <i class="bi bi-table me-2"></i> <span class="ms-1 d-none d-sm-inline text-white">Asistencia</span></a>
+                <a href="#" class="nav-link text-white">
+                  <i class="bi bi-table me-2"></i> <span class="ms-1 d-none d-sm-inline">Asistencia</span></a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Calificaciones</span></a>
+                <a href="#" class="nav-link text-white">
+                <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Kardex</span> </a>
+                <a href="#" class="nav-link text-white">
+                <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Disiplinas</span> </a>
+                <a href="#" class="nav-link text-white">
+                <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline text-white">Instructor</span> </a>
+                <a href="#" class="nav-link text-white">
+                <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
               </li>
             </ul>
             <hr>
