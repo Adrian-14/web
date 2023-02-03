@@ -102,24 +102,24 @@ if (!isset($user)) {
                         </div>
                         <div class="container-fluid">
                             <div class="row">
-                                <form action="carga.php" method="post" enctype="multipart/form-data">
+                                <form action="alta.php" method="POST" enctype="multipart/form-data">
                                     <div class="row">
                                         <h2 class="display-6">Datos del Estudiante</h2>
                                         <div class="col-md-3">
                                             <label for="formFile" class="form-label">Nombre</label>
-                                            <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
+                                            <input type="text" name="nombre" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
                                         </div>
                                         <div class="col-md-3">
                                             <label for="formFile" class="form-label">Primer Apellido</label>
-                                            <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="1erapellido">
+                                            <input type="text" name="apellido1" class="form-control" placeholder="Primer Apellido" aria-label="1erapellido">
                                         </div>
                                         <div class="col-md-3">
                                             <label for="formFile" class="form-label">Sgundo Apellido</label>
-                                            <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
+                                            <input type="text" name="apellido2" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
                                         </div>
                                         <div class="col-md-3">
                                             <label for="inputState" class="form-label">Edad</label>
-                                            <select id="inputState" class="form-select">
+                                            <select id="inputState" name="edad" class="form-select">
                                                 <option selected>Seleccione...</option>
                                                 <option value="6">6</option>
                                                 <option value="7">7</option>
@@ -140,7 +140,7 @@ if (!isset($user)) {
                                     <div class="row">
                                         <div class="col-md-3">
                                             <label for="inputState" class="form-label">Nacionalidad</label>
-                                            <select id="inputState" class="form-select">
+                                            <select id="inputState" name="nacionalidad" class="form-select">
                                                 <option selected>Seleccione...</option>
                                                 <option value="mexicana">Mexicana</option>
                                                 <option value="extranjera">Estranjera</option>
@@ -148,41 +148,39 @@ if (!isset($user)) {
                                         </div>
                                         <div class="col-md-3">
                                             <label for="inputState" class="form-label">Genero</label>
-                                            <select id="inputState" class="form-select">
+                                            <select id="inputState" name="genero" class="form-select">
                                                 <option selected>Seleccione...</option>
                                                 <option value="mexicana">Hombre</option>
                                                 <option value="extranjera">Mujer</option>
                                             </select>
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="" class="form-label">Fecha de Nacimiento</label>
-                                            <input type="date" class="form-control" aria-label="fecha">
+                                            <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                                            <input type="date" name="fecha_naci" class="form-control" aria-label="fecha">
                                         </div>
                                         <div class="col-md-3">
                                             <label for="curp" class="form-label">CURP</label>
-                                            <input type="text" class="form-control" aria-label="curp">
+                                            <input type="text" name="curp" class="form-control" aria-label="curp">
                                         </div>
                                         <br>
+                                        <br>
+
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <label for="curp" class="form-label">Domicilio</label>
-                                                <input type="text" class="form-control" aria-label="curp">
+                                                <label for="don" class="form-label">Domicilio</label>
+                                                <input type="text" name="domicilio" class="form-control" aria-label="curp">
                                             </div>
                                             <div class="col-md-3">
-                                                <label for="curp" class="form-label">Comunidad</label>
-                                                <input type="text" class="form-control" aria-label="curp">
+                                                <label for="comu" class="form-label">Comunidad</label>
+                                                <input type="text" name="comunidad" class="form-control" aria-label="curp">
                                             </div>
                                             <div class="col-md-3">
-                                                <label for="curp" class="form-label">Municipio</label>
-                                                <input type="text" class="form-control" aria-label="curp">
+                                                <label for="mun" class="form-label">Municipio</label>
+                                                <input type="text" name="municipio" class="form-control" aria-label="curp">
                                             </div>
                                         </div>
                                     </div>
-                                    <br>
-                                    <div class="row">
-                                        <h3 class="display-5">Datos de Escuela</h3>
-
-                                    </div>
+                                    <button class="btn btn-success" type="submit">Alta</button>
                                 </form>
                             </div>
                         </div>
