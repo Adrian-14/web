@@ -105,19 +105,19 @@ if (!isset($user)) {
                                 <form action="carga.php" method="post" enctype="multipart/form-data">
                                     <div class="row">
                                         <h2 class="display-6">Datos del Estudiante</h2>
-                                            <div class="col-md-3">
-                                                <label for="formFile" class="form-label">Nombre</label>
-                                                <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label for="formFile" class="form-label">Primer Apellido</label>
-                                                <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="1erapellido">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label for="formFile" class="form-label">Sgundo Apellido</label>
-                                                <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
-                                            </div>
-                                            <div class="col-md-3">
+                                        <div class="col-md-3">
+                                            <label for="formFile" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="formFile" class="form-label">Primer Apellido</label>
+                                            <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="1erapellido">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="formFile" class="form-label">Sgundo Apellido</label>
+                                            <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
+                                        </div>
+                                        <div class="col-md-3">
                                             <label for="inputState" class="form-label">Edad</label>
                                             <select id="inputState" class="form-select">
                                                 <option selected>Seleccione...</option>
@@ -162,11 +162,26 @@ if (!isset($user)) {
                                             <label for="curp" class="form-label">CURP</label>
                                             <input type="text" class="form-control" aria-label="curp">
                                         </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label for="curp" class="form-label">Domicilio</label>
+                                                <input type="text" class="form-control" aria-label="curp">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="curp" class="form-label">Comunidad</label>
+                                                <input type="text" class="form-control" aria-label="curp">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="curp" class="form-label">Municipio</label>
+                                                <input type="text" class="form-control" aria-label="curp">
+                                            </div>
+                                        </div>
                                     </div>
                                     <br>
                                     <div class="row">
                                         <h3 class="display-5">Datos de Escuela</h3>
-                                        
+
                                     </div>
                                 </form>
                             </div>
