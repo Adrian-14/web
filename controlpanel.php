@@ -111,7 +111,7 @@ if (!isset($user)) {
                           <h6 class="text-uppercase text-muted mb-2">
                             Total
                           </h6>
-                          <span class="h2 mb-0">Alumnos</span>
+                          <span class="h2 mb-0"></span>
                         </div>
                       </div>
                     </div>
@@ -125,7 +125,7 @@ if (!isset($user)) {
                           <h6 class="text-uppercase text-muted mb-2">
                             Total
                           </h6>
-                          <span class="h2 mb-0">Alumnos</span>
+                          <span class="h2 mb-0"></span>
                         </div>
                       </div>
                     </div>
@@ -139,7 +139,7 @@ if (!isset($user)) {
                           <h6 class="text-uppercase text-muted mb-2">
                             Total
                           </h6>
-                          <span class="h2 mb-0">Alumnos</span>
+                          <span class="h2 mb-0"></span>
                         </div>
                       </div>
                     </div>
@@ -153,7 +153,7 @@ if (!isset($user)) {
                           <h6 class="text-uppercase text-muted mb-2">
                             Total
                           </h6>
-                          <span class="h2 mb-0">Alumnos</span>
+                          <span class="h2 mb-0"></span>
                         </div>
                       </div>
                     </div>

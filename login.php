@@ -9,9 +9,9 @@
   <body class="text-center w-100">
     
 <main class="form-signin w-100 m-auto">
-  <form action="validar.php" method="post">
+  <form action="validar.php" method="post" enctype="multipart/form-data">
     <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Iniciar</h1>
+    <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
       <label for="floatingInput">Correo</label>
@@ -20,8 +20,8 @@
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="clave" required>
       <label for="floatingPassword">Clave de Acceso</label>
     </div>
-    <button id="btnlogin" class="w-100 btn btn-lg btn-success" type="submit" value="ingresar">Iniciar</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+    <button id="btnlogin" class="w-100 btn btn-lg btn-primary" type="submit" value="ingresar">Iniciar</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2023 - Adrian Hernández</p>
     </form>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
