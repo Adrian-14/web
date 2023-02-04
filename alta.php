@@ -17,8 +17,12 @@ $insertar = "INSERT INTO registro (nombre, apellido1, apellido2, edad, nacionali
 
 $query = mysqli_query($conn, $insertar);
 if($query){
-    echo "Correcto";
+    echo "<script> alert('Registrado');
+    location.href = 'registro.php';
+    </script>";
 }else{
-    echo "incorrecto";
+    "<script> alert('No Registrado');
+    location.href = 'registro.php';
+    </script>";
 }
 ?> 
