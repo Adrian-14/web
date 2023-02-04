@@ -1,4 +1,5 @@
 <?php
+require "total.php";
 session_start();
 $user = $_SESSION['user'];
 if (!isset($user)) {
@@ -31,17 +32,17 @@ if (!isset($user)) {
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
               <li class="nav-item">
                 <a href="controlpanel.php" class="nav-link active">
-                <i class="bi bi-house-fill me-2"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
+                  <i class="bi bi-house-fill me-2"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
                 </a>
               </li>
               <li>
                 <a href="alumnos.php" class="nav-link text-white">
-                <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
+                  <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
                 </a>
               </li>
               <li>
                 <a href="registro.php" class="nav-link text-white">
-                <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
+                  <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
@@ -49,26 +50,26 @@ if (!isset($user)) {
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
-                <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
+                  <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
-                <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
+                  <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
-                <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
+                  <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
-                <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
+                  <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
               </li>
             </ul>
             <hr>
             <div class="dropdown pb-4">
               <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user'];?></span>
+                <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li><a class="dropdown-item" href="#">Sobre mi</a></li>
@@ -95,7 +96,7 @@ if (!isset($user)) {
                     </div>
                     <div class="col-auto">
                       <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                      <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user'];?></span>
+                      <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
                     </div>
                   </div>
                 </div>
@@ -109,7 +110,28 @@ if (!isset($user)) {
                       <div class="align-items-center row">
                         <div class="col">
                           <h6 class="text-uppercase text-muted mb-2">
-                            Total
+                            Alumnos
+                          </h6>
+                          <div class="row">
+                            <div class="col">
+                              <h5 class="text-uppercase mb-2">Cursando</h5>
+                            </div>
+                            <div class="col">
+                              <span class="h2 mb-0"><?php echo $rowcount; ?></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="align-items-center row">
+                        <div class="col">
+                          <h6 class="text-uppercase text-muted mb-2">
+                            Maestros
                           </h6>
                           <span class="h2 mb-0"></span>
                         </div>
@@ -123,21 +145,7 @@ if (!isset($user)) {
                       <div class="align-items-center row">
                         <div class="col">
                           <h6 class="text-uppercase text-muted mb-2">
-                            Total
-                          </h6>
-                          <span class="h2 mb-0"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl col-md-6 col-12">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="align-items-center row">
-                        <div class="col">
-                          <h6 class="text-uppercase text-muted mb-2">
-                            Total
+                            Disiplinas
                           </h6>
                           <span class="h2 mb-0"></span>
                         </div>

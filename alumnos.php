@@ -91,8 +91,8 @@ if (!isset($user)) {
                                 <div class="header-body">
                                     <div class="row align-items-end row">
                                         <div class="col">
-                                            <h6 class="header-pretitle fw-3">Inicio</h6>
-                                            <h1 class="header-title fs-3">Control Panel</h1>
+                                            <h6 class="header-pretitle fw-3">Tabla</h6>
+                                            <h1 class="header-title fs-3">Alumnos</h1>
                                         </div>
                                         <div class="col-auto">
                                             <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
