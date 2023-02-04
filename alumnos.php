@@ -119,7 +119,7 @@ if (!isset($user)) {
                                         <?php
                                         foreach ($query as $row){?>
                                         <tr>
-                                            <th scope="row">1</th>
+                                            <th scope="row"><?php echo $row['id']; ?></th>
                                             <td><?php echo $row['nombre']; ?></td>
                                             <td><?php echo $row['apellido1']; ?></td>
                                             <td><?php echo $row['apellido2']; ?></td>
