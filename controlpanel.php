@@ -84,17 +84,23 @@ if (!isset($user)) {
           </div>
         </div>
         <div class="b-example-divider"></div>
-        <div class="col py-3">
+        <div class="col py-0">
           <div class="main-content">
             <div class="header">
               <div class="container-fluid">
                 <div class="header-body">
-                  <div class="row align-items-end row">
+                  <div class="row align-items-center row">
                     <div class="col">
                       <h6 class="header-pretitle fw-3">Inicio</h6>
                       <h1 class="header-title fs-3">Control Panel</h1>
                     </div>
-                    <div class="col-auto">
+                    <div class="col">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                      </form>
+                    </div>
+                    <div class="col d-flex justify-content-end">
                       <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
                       <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
                     </div>

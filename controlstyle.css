@@ -92,7 +92,7 @@ body {
   
 .header {
     --bs-header-margin-bottom: 2rem;
-    --bs-header-spacing-y: 1.5rem;
+    --bs-header-spacing-y: 1rem;
     --bs-header-body-border-width: 1px;
     --bs-header-body-border-color: #e3ebf6;
     --bs-header-body-border-color-dark: rgba(227,235,246,.1);
