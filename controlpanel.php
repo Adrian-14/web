@@ -83,7 +83,7 @@ if (!isset($user)) {
             </div>
           </div>
         </div>
-        <div class="b-example-divider"></div>
+        
         <div class="col py-0">
           <div class="main-content">
             <div class="header">
@@ -142,7 +142,7 @@ if (!isset($user)) {
                           <div class="float-start">
                             <h5 class="fw-normal mt-0 text-muted">Diciplinas</h5>
                             <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
-                            <p class="mb-0 text-muted">En Curso</p>
+                            <p class="mb-0 text-muted">Actuales</p>
                           </div>
                         </div>
                       </div>
