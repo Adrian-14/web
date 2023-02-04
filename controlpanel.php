@@ -35,7 +35,7 @@ if (!isset($user)) {
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="alumnos.php" class="nav-link text-white">
                 <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
                 </a>
               </li>
