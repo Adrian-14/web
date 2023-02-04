@@ -103,67 +103,92 @@ if (!isset($user)) {
               </div>
             </div>
             <div class="container-fluid">
-              <div class="row">
-                <div class="col-xl col-md-6 col-12">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="align-items-center row">
-                        <div class="col">
-                          <h6 class="text-uppercase text-muted mb-2">
-                            Alumnos
-                          </h6>
-                          <div class="row">
-                            <div class="col">
-                              <h5 class="text-uppercase mb-2">Cursando</h5>
-                            </div>
-                            <div class="col">
-                              <span class="h2 mb-0"><?php echo $rowcount; ?></span>
-                            </div>
+              <div class="row d-flex align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="widget-flat card mb-4 border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">Cursando</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="widget-flat card mb-4 border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Instructores</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">Dando Clases</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="widget-flat card border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Diciplinas</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">En Curso</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="widget-flat card border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">Cursando</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl col-md-6 col-12">
-                  <div class="card">
+                <div class="col-xl-7 col-lg-6">
+                  <div class="card-h-100 card border-0 shadow">
                     <div class="card-body">
-                      <div class="align-items-center row">
-                        <div class="col">
-                          <h6 class="text-uppercase text-muted mb-2">
-                            Maestros
-                          </h6>
-                          <span class="h2 mb-0"></span>
-                        </div>
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h4 class="header-title text-muted">Total de Alumnos por Comunidad</h4>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl col-md-6 col-12">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="align-items-center row">
-                        <div class="col">
-                          <h6 class="text-uppercase text-muted mb-2">
-                            Disiplinas
-                          </h6>
-                          <span class="h2 mb-0"></span>
-                        </div>
+                      <div>
+                        <canvas id="myChart"></canvas>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl col-md-6 col-12">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="align-items-center row">
-                        <div class="col">
-                          <h6 class="text-uppercase text-muted mb-2">
-                            Total
-                          </h6>
-                          <span class="h2 mb-0"></span>
-                        </div>
-                      </div>
+
+                      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                      <script>
+                        const ctx = document.getElementById('myChart');
+
+                        new Chart(ctx, {
+                          type: 'bar',
+                          data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                            datasets: [{
+                              label: 'Numero de Alumnos',
+                              data: [12, 19, 3, 5, 2, 3],
+                              borderWidth: 1
+                            }]
+                          },
+                          options: {
+                            scales: {
+                              y: {
+                                beginAtZero: true
+                              }
+                            }
+                          }
+                        });
+                      </script>
+
                     </div>
                   </div>
                 </div>

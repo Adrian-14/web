@@ -124,3 +124,7 @@ hr {
   border-top: var(--bs-border-width) solid;
   opacity: .25;
 }
+.widget-flat {
+  position: relative;
+  overflow: hidden;
+}
