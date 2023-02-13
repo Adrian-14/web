@@ -4,9 +4,9 @@ require "conn.php";
 $nombre = $_POST['nombre'];
 $apellido1 = $_POST['apellido1'];
 $apellido2 = $_POST['apellido2'];
-$diciplina = $_POST['diciplina'];
+$diciplina = $_POST['disciplina'];
 
-$insertar = "INSERT INTO maestros (nombre, apellido1, apellido2, diciplina) VALUES ('$nombre', '$apellido1', '$apellido2', '$diciplina') ";
+$insertar = "INSERT INTO maestros (nombre, apellido1, apellido2, disciplina) VALUES ('$nombre', '$apellido1', '$apellido2', '$disciplina') ";
 
 $query = mysqli_query($conn, $insertar);
 if($query){

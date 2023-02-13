@@ -125,7 +125,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Disiplina</label>
-                                        <select id="inputState" name="diciplina" class="form-select">
+                                        <select id="inputState" name="disciplina" class="form-select">
                                             <option selected>Selecciona...</option>
                                             <option value="Danza">Danza</option>
                                             <option value="Teatro">Teatro</option>
@@ -148,7 +148,7 @@ if (!isset($user)) {
                                             <th scope="col">Nombre</th>
                                             <th scope="col">Primer Apellido</th>
                                             <th scope="col">Segundo Apellido</th>
-                                            <th scope="col">Disiplina</th>
+                                            <th scope="col">Diciplina</th>
                                             
                                         </tr>
                                     </thead>
@@ -160,7 +160,7 @@ if (!isset($user)) {
                                             <td><?php echo $row['nombre']; ?></td>
                                             <td><?php echo $row['apellido1']; ?></td>
                                             <td><?php echo $row['apellido2']; ?></td>
-                                            <td><?php echo $row['disiplina']; ?></td>
+                                            <td><?php echo $row['disciplina']; ?></td>
                                         </tr>
                                     </tbody>
                                     <?php
