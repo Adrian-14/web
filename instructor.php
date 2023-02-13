@@ -94,7 +94,7 @@ if (!isset($user)) {
                                             <h6 class="header-pretitle fw-3">Datos</h6>
                                             <h1 class="header-title fs-3">Instructor</h1>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <form class="d-flex" role="search">
                                                 <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                                                 <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
@@ -109,21 +109,21 @@ if (!isset($user)) {
                             </div>
                         </div>
                         <div class="container-fluid">
-                            <div class="row d-flex align-items-center">
+                            <div class="row d-flex align-items-center justify-content-center">
                                 <form class="row g-3" action="#" method="post">
-                                    <div class="col-auto border-1">
+                                    <div class="col-auto">
                                         <label for="validationDefault03" class="form-label">Nombre</label>
                                         <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-md-3">
                                         <label for="validationDefault03" class="form-label">Primer Apellido</label>
                                         <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-md-3">
                                         <label for="validationDefault03" class="form-label">Segundo Apellido</label>
                                         <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-md-3">
                                         <label for="inputState" class="form-label">Disiplina</label>
                                         <select id="inputState" name="genero" class="form-select">
                                             <option selected>Selecciona...</option>
@@ -133,10 +133,41 @@ if (!isset($user)) {
                                             <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
                                         </select>
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-auto d-flex align-items-center">
                                         <button class="btn btn-primary" type="submit">Agregar</button>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">N°</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Primer Apellido</th>
+                                            <th scope="col">Segundo Apellido</th>
+                                            <th scope="col">Disiplina</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody id="datos">
+                                        <?php
+                                        foreach ($query as $row){?>
+                                        <tr>
+                                            <th scope="row"><?php echo $row['id']; ?></th>
+                                            <td><?php echo $row['nombre']; ?></td>
+                                            <td><?php echo $row['apellido1']; ?></td>
+                                            <td><?php echo $row['apellido2']; ?></td>
+                                            <td><?php echo $row['disiplina']; ?></td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                    <?php
+                                    }
+                                    ?>
+                                </table>
                             </div>
                         </div>
                     </div>
