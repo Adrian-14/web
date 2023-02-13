@@ -82,7 +82,7 @@ if (!isset($user)) {
                         </div>
                     </div>
                 </div>
-                <div class="b-example-divider"></div>
+                
                 <div class="col py-3">
                     <div class="main-content">
                         <div class="header">

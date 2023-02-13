@@ -193,6 +193,7 @@ if (!isset($user)) {
                             }
                           }
                         });
+                        let url = 'http://localhost/web/total.php'
                       </script>
 
                     </div>
