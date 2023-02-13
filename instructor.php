@@ -91,8 +91,8 @@ if (!isset($user)) {
                                 <div class="header-body">
                                     <div class="row align-items-center row">
                                         <div class="col">
-                                            <h6 class="header-pretitle fw-3">Inicio</h6>
-                                            <h1 class="header-title fs-3">Control Panel</h1>
+                                            <h6 class="header-pretitle fw-3">Datos</h6>
+                                            <h1 class="header-title fs-3">Instructor</h1>
                                         </div>
                                         <div class="col">
                                             <form class="d-flex" role="search">
@@ -110,7 +110,33 @@ if (!isset($user)) {
                         </div>
                         <div class="container-fluid">
                             <div class="row d-flex align-items-center">
-                                
+                                <form class="row g-3" action="#" method="post">
+                                    <div class="form-floating col-auto">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
+                                        <label for="floatingInput">Nombre</label>
+                                    </div>
+                                    <div class="form-floating col-auto">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
+                                        <label for="floatingInput">Primer Apellido</label>
+                                    </div>
+                                    <div class="form-floating col-auto">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
+                                        <label for="floatingInput">Segundo Apellido</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="inputState" class="form-label">Disiplina</label>
+                                        <select id="inputState" name="genero" class="form-select">
+                                            <option selected>Seleccione...</option>
+                                            <option value="Danza">Danza</option>
+                                            <option value="Teatro">Teatro</option>
+                                            <option value="Musica">Musica</option>
+                                            <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary" type="submit">Agregar</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
