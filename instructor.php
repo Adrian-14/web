@@ -111,22 +111,22 @@ if (!isset($user)) {
                         <div class="container-fluid">
                             <div class="row d-flex align-items-center">
                                 <form class="row g-3" action="#" method="post">
-                                    <div class="form-floating col-auto">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
-                                        <label for="floatingInput">Nombre</label>
+                                    <div class="col-auto border-1">
+                                        <label for="validationDefault03" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
-                                    <div class="form-floating col-auto">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
-                                        <label for="floatingInput">Primer Apellido</label>
+                                    <div class="col-auto">
+                                        <label for="validationDefault03" class="form-label">Primer Apellido</label>
+                                        <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
-                                    <div class="form-floating col-auto">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="user" required>
-                                        <label for="floatingInput">Segundo Apellido</label>
+                                    <div class="col-auto">
+                                        <label for="validationDefault03" class="form-label">Segundo Apellido</label>
+                                        <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
                                     <div class="col-auto">
                                         <label for="inputState" class="form-label">Disiplina</label>
                                         <select id="inputState" name="genero" class="form-select">
-                                            <option selected>Seleccione...</option>
+                                            <option selected>Selecciona...</option>
                                             <option value="Danza">Danza</option>
                                             <option value="Teatro">Teatro</option>
                                             <option value="Musica">Musica</option>
