@@ -125,7 +125,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Disiplina</label>
-                                        <select id="inputState" name="disiplina" class="form-select">
+                                        <select id="inputState" name="diciplina" class="form-select">
                                             <option selected>Selecciona...</option>
                                             <option value="Danza">Danza</option>
                                             <option value="Teatro">Teatro</option>

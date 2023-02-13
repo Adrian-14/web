@@ -60,7 +60,7 @@ if (!isset($user)) {
                                     <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link text-white">
+                                <a href="instructor.php" class="nav-link text-white">
                                     <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
                             </li>
                         </ul>
