@@ -110,7 +110,7 @@ if (!isset($user)) {
                         </div>
                         <div class="container-fluid">
                             <div class="row d-flex align-items-center justify-content-center">
-                                <form class="row g-3" action="#" method="post">
+                                <form class="row g-3" action="altaM.php" method="POST" enctype="multipart/form-data">
                                     <div class="col-auto">
                                         <label for="validationDefault03" class="form-label">Nombre</label>
                                         <input type="text" class="form-control" id="validationDefault03" required>
