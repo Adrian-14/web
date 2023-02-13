@@ -125,7 +125,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Disiplina</label>
-                                        <select id="inputState" name="genero" class="form-select">
+                                        <select id="inputState" name="disiplina" class="form-select">
                                             <option selected>Selecciona...</option>
                                             <option value="Danza">Danza</option>
                                             <option value="Teatro">Teatro</option>
@@ -161,7 +161,6 @@ if (!isset($user)) {
                                             <td><?php echo $row['apellido1']; ?></td>
                                             <td><?php echo $row['apellido2']; ?></td>
                                             <td><?php echo $row['disiplina']; ?></td>
-                                            
                                         </tr>
                                     </tbody>
                                     <?php
