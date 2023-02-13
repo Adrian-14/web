@@ -1,5 +1,5 @@
 <?php
-require "total.php";
+require "consultaM.php";
 session_start();
 $user = $_SESSION['user'];
 if (!isset($user)) {
@@ -108,7 +108,7 @@ if (!isset($user)) {
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid">
+                        <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
                                 <form class="row g-3" action="altaM.php" method="POST" enctype="multipart/form-data">
                                     <div class="col-auto">
@@ -139,7 +139,7 @@ if (!isset($user)) {
                                 </form>
                             </div>
                         </div>
-                        <div class="container-fluid">
+                        <div class="container pt-5">
                             <div class="row">
                                 <table class="table">
                                     <thead>
@@ -149,23 +149,34 @@ if (!isset($user)) {
                                             <th scope="col">Primer Apellido</th>
                                             <th scope="col">Segundo Apellido</th>
                                             <th scope="col">Diciplina</th>
-                                            
+                                            <th scope="col">Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody id="datos">
                                         <?php
-                                        foreach ($query as $row){?>
-                                        <tr>
-                                            <th scope="row"><?php echo $row['id']; ?></th>
-                                            <td><?php echo $row['nombre']; ?></td>
-                                            <td><?php echo $row['apellido1']; ?></td>
-                                            <td><?php echo $row['apellido2']; ?></td>
-                                            <td><?php echo $row['disciplina']; ?></td>
-                                        </tr>
+                                        foreach ($query as $row) { ?>
+                                            <tr>
+                                                <th scope="row"><?php echo $row['id']; ?></th>
+                                                <td><?php echo $row['nombre']; ?></td>
+                                                <td><?php echo $row['apellido1']; ?></td>
+                                                <td><?php echo $row['apellido2']; ?></td>
+                                                <td><?php echo $row['disciplina']; ?></td>
+                                                <td>
+                                                    <div class="row d-flex align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                     </tbody>
-                                    <?php
-                                    }
-                                    ?>
+                                <?php
+                                        }
+                                ?>
                                 </table>
                             </div>
                         </div>
