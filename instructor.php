@@ -113,15 +113,15 @@ if (!isset($user)) {
                                 <form class="row g-3" action="altaM.php" method="POST" enctype="multipart/form-data">
                                     <div class="col-auto">
                                         <label for="validationDefault03" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="validationDefault03" required>
+                                        <input type="text" class="form-control" name="nombre" id="validationDefault03" required>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="validationDefault03" class="form-label">Primer Apellido</label>
-                                        <input type="text" class="form-control" id="validationDefault03" required>
+                                        <input type="text" class="form-control" name="apellido1" id="validationDefault03" required>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="validationDefault03" class="form-label">Segundo Apellido</label>
-                                        <input type="text" class="form-control" id="validationDefault03" required>
+                                        <input type="text" class="form-control" name="apellido2" id="validationDefault03" required>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Disiplina</label>
