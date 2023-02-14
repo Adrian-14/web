@@ -122,6 +122,7 @@ if (!isset($user)) {
                                         foreach ($query as $row){?>
                                         <tr>
                                             <th scope="row"><?php echo $row['id']; ?></th>
+                                            <td><img src="<?php echo substr($row['foto'],3); ?>" width="120" alt="foto"></td>
                                             <td><?php echo $row['nombre']; ?></td>
                                             <td><?php echo $row['apellido1']; ?></td>
                                             <td><?php echo $row['apellido2']; ?></td>

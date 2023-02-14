@@ -106,6 +106,12 @@ if (!isset($user)) {
                                     <div class="row">
                                         <h2 class="display-6">Datos del Estudiante</h2>
                                         <div class="col-md-3">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <div class="col-sm-12">
+                                                <input type="file" class="form-control" id="foto" name="foto" multiple>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
                                             <label for="formFile" class="form-label">Nombre</label>
                                             <input type="text" name="nombre" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
                                         </div>
