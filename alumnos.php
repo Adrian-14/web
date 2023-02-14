@@ -108,11 +108,13 @@ if (!isset($user)) {
                                     <thead>
                                         <tr>
                                             <th scope="col">N°</th>
+                                            <th scope="col">Foto</th>
                                             <th scope="col">Nombre</th>
                                             <th scope="col">Primer Apellido</th>
                                             <th scope="col">Segundo Apellido</th>
                                             <th scope="col">Edad</th>
                                             <th scope="col">Curp</th>
+                                            <th scope="col">Acción</th>
                                         </tr>
                                     </thead>
                                     <tbody id="datos">

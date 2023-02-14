@@ -128,7 +128,7 @@ if (!isset($user)) {
                         <div class="card-body">
                           <div class="float-start">
                             <h5 class="fw-normal mt-0 text-muted">Instructores</h5>
-                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcountins; ?></span></h3>
                             <p class="mb-0 text-muted">Dando Clases</p>
                           </div>
                         </div>
