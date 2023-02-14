@@ -26,4 +26,5 @@ if($query){
     location.href = 'registro.php';
     </script>";
 }
+
 ?> 
