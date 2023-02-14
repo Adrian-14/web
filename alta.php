@@ -1,7 +1,7 @@
 <?php 
 require "conn.php";
 
-
+$imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
 $nombre = $_POST['nombre'];
 $apellido1 = $_POST['apellido1'];
 $apellido2 = $_POST['apellido2'];
@@ -25,23 +25,5 @@ if($query){
     "<script> alert('No Registrado');
     location.href = 'registro.php';
     </script>";
-}
-
-if(isset($_POST["submit"])){
-    $revisar = getimagesize($_FILES["image"]["tmp_name"]);
-    if($revisar !== false){
-        $image = $_FILE['image']['tmp_name'];
-        $imgContenido = addslashes(file_get_contents($image));
-    }
-}
-if(!empty($_GET['id'])){
-    $result = $db->query("SELECT * FROM resgistro WHERE id={$_GET['id']}");
-    if($result->num_rows > 0){
-        $imgDatos = $result->fetch_assoc();
-        header("content-type: image/jpg");
-        echo $imgDatos['foto'];
-    }else{
-        echo "Foto no Existe...";
-    }
 }
 ?> 
