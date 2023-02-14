@@ -1,7 +1,7 @@
 <?php 
 require "conn.php";
 
-$imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+$imagen = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 $nombre = $_POST['nombre'];
 $apellido1 = $_POST['apellido1'];
 $apellido2 = $_POST['apellido2'];
@@ -14,7 +14,7 @@ $domicilio = $_POST['domicilio'];
 $comunidad = $_POST['comunidad'];
 $municipio = $_POST['municipio'];
 
-$insertar = "INSERT INTO registro (foto, nombre, apellido1, apellido2, edad, nacionalidad, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio) VALUES ('$imgContenido', '$nombre', '$apellido1', '$apellido2', '$edad', '$nacionalidad', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio') ";
+$insertar = "INSERT INTO registro (foto, nombre, apellido1, apellido2, edad, nacionalidad, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio) VALUES ('$imagen', '$nombre', '$apellido1', '$apellido2', '$edad', '$nacionalidad', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio') ";
 
 $query = mysqli_query($conn, $insertar);
 if($query){

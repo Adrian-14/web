@@ -108,7 +108,7 @@ if (!isset($user)) {
                                         <div class="col-md-3">
                                             <label for="formFile" class="form-label">Foto</label>
                                             <div class="col-sm-12">
-                                                <input type="file" class="form-control" id="foto" name="imagen" multiple>
+                                                <input type="file" class="form-control" id="foto" name="foto" multiple>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
