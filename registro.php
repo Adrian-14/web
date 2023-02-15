@@ -93,9 +93,6 @@ if (!isset($user)) {
                                             <h6 class="header-pretitle">Registro</h6>
                                             <h1 class="header-title">Registro de Alumnos</h1>
                                         </div>
-                                        <div class="col-auto">
-                                            <button class="lift btn btn-primary" type="button">Cerrar Sesion</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

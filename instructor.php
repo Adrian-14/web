@@ -141,7 +141,7 @@ if (!isset($user)) {
                         </div>
                         <div class="container pt-5">
                             <div class="row">
-                                <table class="table">
+                                <table class="table table-striped table-sm align-middle table-edge table-nowrap mb-0">
                                     <thead>
                                         <tr>
                                             <th scope="col">N°</th>
