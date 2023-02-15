@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-02-2023 a las 21:57:39
+-- Tiempo de generación: 15-02-2023 a las 22:23:26
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.0.25
 
@@ -83,15 +83,24 @@ CREATE TABLE `registro` (
   `curp` varchar(18) NOT NULL,
   `domicilio` varchar(100) NOT NULL,
   `comunidad` varchar(100) NOT NULL,
-  `municipio` varchar(100) NOT NULL
+  `municipio` varchar(100) NOT NULL,
+  `correo` varchar(200) NOT NULL,
+  `institucion` varchar(200) NOT NULL,
+  `domicilioins` varchar(200) NOT NULL,
+  `municipioins` varchar(200) NOT NULL,
+  `estadoins` varchar(200) NOT NULL,
+  `ciclo` varchar(200) NOT NULL,
+  `matricula` varchar(200) NOT NULL,
+  `disciplinains` varchar(200) NOT NULL,
+  `fechaingreso` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Volcado de datos para la tabla `registro`
 --
 
-INSERT INTO `registro` (`id`, `foto`, `nombre`, `apellido1`, `apellido2`, `edad`, `nacionalidad`, `genero`, `fecha_nacimiento`, `curp`, `domicilio`, `comunidad`, `municipio`) VALUES
-(10, 0x666f746f732f666f746f322e6a7067, 'Alexa', 'Hernandez', 'Matias', '17', 'mexicana', 'extranjera', '1995-12-27', 'ALH951227MQTRTS09', 'calle #12 Colonia Centro', 'PathÃ©', 'Cadereyta');
+INSERT INTO `registro` (`id`, `foto`, `nombre`, `apellido1`, `apellido2`, `edad`, `nacionalidad`, `genero`, `fecha_nacimiento`, `curp`, `domicilio`, `comunidad`, `municipio`, `correo`, `institucion`, `domicilioins`, `municipioins`, `estadoins`, `ciclo`, `matricula`, `disciplinains`, `fechaingreso`) VALUES
+(10, 0x666f746f732f666f746f322e6a7067, 'Alexa', 'Hernandez', 'Matias', '17', 'mexicana', 'extranjera', '1995-12-27', 'ALH951227MQTRTS09', 'calle #12 Colonia Centro', 'PathÃ©', 'Cadereyta', '', '', '', '', '', '', '', '', '');
 
 --
 -- Índices para tablas volcadas

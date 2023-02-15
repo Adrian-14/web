@@ -194,7 +194,7 @@ if (!isset($user)) {
                                         </div>
                                         <div class="col-md-3">
                                             <label for="don" class="form-label">Domicilio</label>
-                                            <input type="text" name="Domicilioins" class="form-control" aria-label="curp">
+                                            <input type="text" name="domicilioins" class="form-control" aria-label="curp">
                                         </div>
                                         <div class="col-md-3">
                                             <label for="don" class="form-label">Municipio</label>

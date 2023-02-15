@@ -17,8 +17,17 @@ $curp = $_POST['curp'];
 $domicilio = $_POST['domicilio'];
 $comunidad = $_POST['comunidad'];
 $municipio = $_POST['municipio'];
+$email = $_POST['correo'];
+$institucion = $_POST['institucionins'];
+$domicilioins = $_POST['domicilioins'];
+$municipioins = $_POST['municipioins'];
+$estadoins = $_POST['estadoins'];
+$ciclo = $_POST['ciclo'];
+$matricula = $_POST['matricula'];
+$disciplina = $_POST['disciplina'];
+$fechaingreso = $_POST['fechaingreso'];
 
-$insertar = "INSERT INTO registro (foto, nombre, apellido1, apellido2, edad, nacionalidad, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio) VALUES ('$destino', '$nombre', '$apellido1', '$apellido2', '$edad', '$nacionalidad', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio') ";
+$insertar = "INSERT INTO alumnos (foto, nombre, apellido1, apellido2, edad, nacionalidad, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio, correo, institucion, domicilioins, municipioins, estadoins, ciclo, matricula, disciplinains, fechaingreso) VALUES ('$destino', '$nombre', '$apellido1', '$apellido2', '$edad', '$nacionalidad', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio', '$email', '$institucion', '$domicilioins', '$municipioins', '$estadoins', '$ciclo', '$matricula', '$disciplina', '$fechaingreso') ";
 
 $query = mysqli_query($conn, $insertar);
 if($query){
