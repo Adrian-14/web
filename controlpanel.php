@@ -111,8 +111,8 @@ if (!isset($user)) {
             <div class="container-fluid">
               <div class="row d-flex align-items-center">
                 <div class="col-xl-5 col-lg-6">
-                  <div class="grid">
-                    <div class="g-col-3">
+                  <div class="row">
+                    <div class="col-6">
                       <div class="widget-flat card mb-4 border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -123,7 +123,7 @@ if (!isset($user)) {
                         </div>
                       </div>
                     </div>
-                    <div class="g-col-3">
+                    <div class="col-6">
                       <div class="widget-flat card mb-4 border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -135,7 +135,9 @@ if (!isset($user)) {
                       </div>
                     </div>
 
-                    <div class="g-col-3">
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
                       <div class="widget-flat card border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -146,7 +148,7 @@ if (!isset($user)) {
                         </div>
                       </div>
                     </div>
-                    <div class="g-col-3">
+                    <div class="col-6">
                       <div class="widget-flat card border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
