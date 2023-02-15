@@ -189,6 +189,25 @@ if (!isset($user)) {
                                     <h2 class="display-6">Solicitud de Ingreso</h2>
                                     <div class="row">
                                         <div class="col-md-3">
+                                            <label for="don" class="form-label">Institucion</label>
+                                            <input type="text" name="institucionins" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="don" class="form-label">Domicilio</label>
+                                            <input type="text" name="Domicilioins" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="don" class="form-label">Municipio</label>
+                                            <input type="text" name="municipioins" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="don" class="form-label">Estado</label>
+                                            <input type="text" name="estadoins" class="form-control" aria-label="curp">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-3">
                                             <label for="don" class="form-label">Ciclo Escolar</label>
                                             <input type="text" name="ciclo" class="form-control" aria-label="curp">
                                         </div>
@@ -205,7 +224,10 @@ if (!isset($user)) {
                                             <input type="date" name="fechaingreso" class="form-control" aria-label="curp">
                                         </div>
                                     </div>
-                                    <button class="btn btn-success" type="submit">Alta</button>
+                                    <br>
+                                    <div class="col text-center">
+                                        <button class="btn btn-success btn-lg" type="submit">Aceptar</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
