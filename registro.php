@@ -208,8 +208,12 @@ if (!isset($user)) {
                                     <br>
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <label for="don" class="form-label">Ciclo Escolar</label>
-                                            <input type="text" name="ciclo" class="form-control" aria-label="curp">
+                                            <label for="inputState" class="form-label">Ciclo Escolar</label>
+                                            <select id="inputState" name="disciplina" class="form-select">
+                                                <option selected>Selecciona...</option>
+                                                <option value="2021-2022">2021 - 2022</option>
+                                                <option value="2022-2023">2022 - 2023</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-3">
                                             <label for="don" class="form-label">Matricula</label>
