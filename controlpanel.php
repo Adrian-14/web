@@ -24,7 +24,7 @@ if (!isset($user)) {
     <div class="container-fluid">
       <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="menuLateral d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
             <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
             </a>
@@ -83,7 +83,7 @@ if (!isset($user)) {
             </div>
           </div>
         </div>
-        
+
         <div class="col py-0">
           <div class="main-content">
             <div class="header">
@@ -111,8 +111,8 @@ if (!isset($user)) {
             <div class="container-fluid">
               <div class="row d-flex align-items-center">
                 <div class="col-xl-5 col-lg-6">
-                  <div class="row">
-                    <div class="col-sm-6">
+                  <div class="grid">
+                    <div class="g-col-3">
                       <div class="widget-flat card mb-4 border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -123,7 +123,7 @@ if (!isset($user)) {
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="g-col-3">
                       <div class="widget-flat card mb-4 border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -134,9 +134,8 @@ if (!isset($user)) {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
+
+                    <div class="g-col-3">
                       <div class="widget-flat card border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -147,7 +146,7 @@ if (!isset($user)) {
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="g-col-3">
                       <div class="widget-flat card border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
@@ -206,9 +205,6 @@ if (!isset($user)) {
       </div>
     </div>
   </header>
-  <main>
-
-  </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
