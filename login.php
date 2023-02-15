@@ -17,8 +17,8 @@
       <label for="floatingInput">Correo</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="clave" required>
-      <label for="floatingPassword">Clave de Acceso</label>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" name="clave" required>
+      <label for="floatingPassword">Contraseña</label>
     </div>
     <button id="btnlogin" class="w-100 btn btn-lg btn-primary" type="submit" value="ingresar">Iniciar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023 - Adrian Hernández</p>
