@@ -216,8 +216,14 @@ if (!isset($user)) {
                                             <input type="text" name="matricula" class="form-control" aria-label="curp">
                                         </div>
                                         <div class="col-md-3">
-                                            <label for="comu" class="form-label">Disciplina</label>
-                                            <input type="text" name="disciplina" class="form-control" aria-label="curp">
+                                            <label for="inputState" class="form-label">Disiplina</label>
+                                            <select id="inputState" name="disciplina" class="form-select">
+                                                <option selected>Selecciona...</option>
+                                                <option value="Danza">Danza</option>
+                                                <option value="Teatro">Teatro</option>
+                                                <option value="Musica">Musica</option>
+                                                <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-3">
                                             <label for="mun" class="form-label">Fecha de Ingreso</label>
