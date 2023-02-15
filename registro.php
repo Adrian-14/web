@@ -82,7 +82,7 @@ if (!isset($user)) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col py-3">
                     <div class="main-content">
                         <div class="header">
@@ -102,7 +102,7 @@ if (!isset($user)) {
                                 <form action="alta.php" method="POST" enctype="multipart/form-data">
                                     <div class="row">
                                         <h2 class="display-6">Datos del Estudiante</h2>
-                                        <div class="col-md-3">
+                                        <div class="col-md-12">
                                             <label for="formFile" class="form-label">Foto</label>
                                             <div class="col-sm-12">
                                                 <input type="file" class="form-control" id="foto" name="foto" multiple>
@@ -165,22 +165,44 @@ if (!isset($user)) {
                                             <label for="curp" class="form-label">CURP</label>
                                             <input type="text" name="curp" class="form-control" aria-label="curp">
                                         </div>
-                                        <br>
-                                        <br>
-
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <label for="don" class="form-label">Domicilio</label>
-                                                <input type="text" name="domicilio" class="form-control" aria-label="curp">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label for="comu" class="form-label">Comunidad</label>
-                                                <input type="text" name="comunidad" class="form-control" aria-label="curp">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <label for="mun" class="form-label">Municipio</label>
-                                                <input type="text" name="municipio" class="form-control" aria-label="curp">
-                                            </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="don" class="form-label">Domicilio</label>
+                                            <input type="text" name="domicilio" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="comu" class="form-label">Comunidad</label>
+                                            <input type="text" name="comunidad" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="mun" class="form-label">Municipio</label>
+                                            <input type="text" name="municipio" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="correo" class="form-label">Correo</label>
+                                            <input type="email" name="correo" class="form-control" aria-label="curp">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2 class="display-6">Solicitud de Ingreso</h2>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="don" class="form-label">Ciclo Escolar</label>
+                                            <input type="text" name="ciclo" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="don" class="form-label">Matricula</label>
+                                            <input type="text" name="matricula" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="comu" class="form-label">Disciplina</label>
+                                            <input type="text" name="disciplina" class="form-control" aria-label="curp">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="mun" class="form-label">Fecha de Ingreso</label>
+                                            <input type="date" name="fechaingreso" class="form-control" aria-label="curp">
                                         </div>
                                     </div>
                                     <button class="btn btn-success" type="submit">Alta</button>

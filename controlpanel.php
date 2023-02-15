@@ -151,9 +151,9 @@ if (!isset($user)) {
                       <div class="widget-flat card border-0 shadow">
                         <div class="card-body">
                           <div class="float-start">
-                            <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                            <h5 class="fw-normal mt-0 text-muted">Comunidades</h5>
                             <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
-                            <p class="mb-0 text-muted">Cursando</p>
+                            <p class="mb-0 text-muted">Ingresadas</p>
                           </div>
                         </div>
                       </div>
