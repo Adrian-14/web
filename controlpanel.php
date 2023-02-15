@@ -22,16 +22,9 @@ if (!isset($user)) {
 <body>
   <header>
     <div class="container-fluid">
-      <nav class=" navbar navbar-vertical navbar-expand-lg row flex-nowrap">
-          <script>
-            var navbarStyle=windows.config.config.webNavbarStyle;
-            if (navbarStyle && navbarStyle !== 'transpartent'){
-              document.querySelector('body').classList.add('navbar-${navbarStyle}');
-            }
-          </script>
-
-      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div class="menuLateral d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
             <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
             </a>
@@ -88,129 +81,129 @@ if (!isset($user)) {
                 <li><a class="dropdown-item" href="cerrar_sesion.php">Cerrar Sesion</a></li>
               </ul>
             </div>
-      </nav>
-    </div>
-
-    <div class="col py-0">
-      <div class="main-content">
-        <div class="header">
-          <div class="container-fluid">
-            <div class="header-body">
-              <div class="row align-items-center row">
-                <div class="col">
-                  <h6 class="header-pretitle fw-3">Inicio</h6>
-                  <h1 class="header-title fs-3">Control Panel</h1>
-                </div>
-                <div class="col">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
-                  </form>
-                </div>
-                <div class="col d-flex justify-content-end">
-                  <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                  <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="row d-flex align-items-center">
-            <div class="col-xl-5 col-lg-6">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="widget-flat card mb-4 border-0 shadow">
-                    <div class="card-body">
-                      <div class="float-start">
-                        <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
-                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
-                        <p class="mb-0 text-muted">Cursando</p>
-                      </div>
+        
+        <div class="col py-0">
+          <div class="main-content">
+            <div class="header">
+              <div class="container-fluid">
+                <div class="header-body">
+                  <div class="row align-items-center row">
+                    <div class="col">
+                      <h6 class="header-pretitle fw-3">Inicio</h6>
+                      <h1 class="header-title fs-3">Control Panel</h1>
                     </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="widget-flat card mb-4 border-0 shadow">
-                    <div class="card-body">
-                      <div class="float-start">
-                        <h5 class="fw-normal mt-0 text-muted">Instructores</h5>
-                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcountins; ?></span></h3>
-                        <p class="mb-0 text-muted">Dando Clases</p>
-                      </div>
+                    <div class="col">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                      </form>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="widget-flat card border-0 shadow">
-                    <div class="card-body">
-                      <div class="float-start">
-                        <h5 class="fw-normal mt-0 text-muted">Diciplinas</h5>
-                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
-                        <p class="mb-0 text-muted">Actuales</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="widget-flat card border-0 shadow">
-                    <div class="card-body">
-                      <div class="float-start">
-                        <h5 class="fw-normal mt-0 text-muted">Comunidades</h5>
-                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
-                        <p class="mb-0 text-muted">Ingresadas</p>
-                      </div>
+                    <div class="col d-flex justify-content-end">
+                      <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
+                      <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-7 col-lg-6">
-              <div class="card-h-100 card border-0 shadow">
-                <div class="card-body">
-                  <div class="d-flex align-items-center justify-content-between mb-2">
-                    <h4 class="header-title text-muted">Total de Alumnos por Comunidad</h4>
+            <div class="container-fluid">
+              <div class="row d-flex align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="widget-flat card mb-4 border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">Cursando</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="widget-flat card mb-4 border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Instructores</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcountins; ?></span></h3>
+                            <p class="mb-0 text-muted">Dando Clases</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <canvas id="myChart"></canvas>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="widget-flat card border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Diciplinas</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">Actuales</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="widget-flat card border-0 shadow">
+                        <div class="card-body">
+                          <div class="float-start">
+                            <h5 class="fw-normal mt-0 text-muted">Comunidades</h5>
+                            <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                            <p class="mb-0 text-muted">Ingresadas</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <div class="card-h-100 card border-0 shadow">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h4 class="header-title text-muted">Total de Alumnos por Comunidad</h4>
+                      </div>
+                      <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
 
-                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                  <script>
-                    const ctx = document.getElementById('myChart');
+                      <script>
+                        const ctx = document.getElementById('myChart');
 
-                    new Chart(ctx, {
-                      type: 'bar',
-                      data: {
-                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                        datasets: [{
-                          label: 'Numero de Alumnos',
-                          data: [12, 19, 3, 5, 2, 3],
-                          borderWidth: 1
-                        }]
-                      },
-                      options: {
-                        scales: {
-                          y: {
-                            beginAtZero: true
+                        new Chart(ctx, {
+                          type: 'bar',
+                          data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                            datasets: [{
+                              label: 'Numero de Alumnos',
+                              data: [12, 19, 3, 5, 2, 3],
+                              borderWidth: 1
+                            }]
+                          },
+                          options: {
+                            scales: {
+                              y: {
+                                beginAtZero: true
+                              }
+                            }
                           }
-                        }
-                      }
-                    });
-                    let url = 'http://localhost/web/total.php'
-                  </script>
+                        });
+                        let url = 'http://localhost/web/total.php'
+                      </script>
 
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
     </div>
   </header>
   <main>
