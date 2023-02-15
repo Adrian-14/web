@@ -83,18 +83,24 @@ if (!isset($user)) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col py-3">
                     <div class="main-content">
                         <div class="header">
                             <div class="container-fluid">
                                 <div class="header-body">
-                                    <div class="row align-items-end row">
+                                    <div class="row align-items-center row">
                                         <div class="col">
-                                            <h6 class="header-pretitle fw-3">Tabla</h6>
-                                            <h1 class="header-title fs-3">Alumnos</h1>
+                                            <h6 class="header-pretitle fw-3">Inicio</h6>
+                                            <h1 class="header-title fs-3">Control Panel</h1>
                                         </div>
-                                        <div class="col-auto">
+                                        <div class="col">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                                                <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                                            </form>
+                                        </div>
+                                        <div class="col d-flex justify-content-end">
                                             <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
                                             <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
                                         </div>
@@ -104,7 +110,7 @@ if (!isset($user)) {
                         </div>
                         <div class="container-fluid">
                             <div class="row">
-                                <table class="table">
+                                <table class="table table-striped table-sm align-middle table-edge table-nowrap mb-0">
                                     <thead>
                                         <tr>
                                             <th scope="col">N°</th>
@@ -119,20 +125,31 @@ if (!isset($user)) {
                                     </thead>
                                     <tbody id="datos">
                                         <?php
-                                        foreach ($query as $row){?>
-                                        <tr>
-                                            <th scope="row"><?php echo $row['id']; ?></th>
-                                            <td><img src="data:image/jpg;base64,<?php echo base64_encode($row);?>"></td>
-                                            <td><?php echo $row['nombre']; ?></td>
-                                            <td><?php echo $row['apellido1']; ?></td>
-                                            <td><?php echo $row['apellido2']; ?></td>
-                                            <td><?php echo $row['edad']; ?></td>
-                                            <td><?php echo $row['curp']; ?></td>
-                                        </tr>
+                                        foreach ($query as $row) { ?>
+                                            <tr>
+                                                <th scope="row"><?php echo $row['id']; ?></th>
+                                                <td><img src="<?php echo $row['foto']; ?>" class="rounded-circle" width="70px" height="70px"></td>
+                                                <td><?php echo $row['nombre']; ?></td>
+                                                <td><?php echo $row['apellido1']; ?></td>
+                                                <td><?php echo $row['apellido2']; ?></td>
+                                                <td><?php echo $row['edad']; ?></td>
+                                                <td><?php echo $row['curp']; ?></td>
+                                                <td>
+                                                    <div class="row d-flex align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
+                                                        </div>
+
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                     </tbody>
-                                    <?php
-                                    }
-                                    ?>
+                                <?php
+                                        }
+                                ?>
                                 </table>
                             </div>
                         </div>
