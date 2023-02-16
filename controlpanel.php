@@ -22,17 +22,17 @@ if (!isset($user)) {
 <body>
   <header>
     <div class="container-fluid">
-      <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              <span class="fs-5 d-none d-sm-inline"><img src="bootstrap-logo.svg" alt="logo" width="30px" height="25px"> Control Panel</span>
+      <main class="d-flex flex-nowrap">
+          <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px">
+            <span class="fs-4">Control Panel</span>
             </a>
             <hr>
-            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <ul class="nav nav-pills flex-column mb-auto" id="menu">
               <li class="nav-item">
                 <a href="controlpanel.php" class="nav-link active">
-                  <i class="bi bi-house-fill me-2"></i><span class="ms-1 d-none d-sm-inline active">Inicio</span>
+                  <i class="bi bi-house-fill me-2"></i><span> Inicio</span>
                 </a>
               </li>
               <li>
@@ -82,7 +82,6 @@ if (!isset($user)) {
               </ul>
             </div>
           </div>
-        </div>
 
         <div class="col py-0">
           <div class="main-content">
@@ -102,7 +101,7 @@ if (!isset($user)) {
                     </div>
                     <div class="col d-flex justify-content-end">
                       <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                      <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
+                      <strong class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></strong>
                     </div>
                   </div>
                 </div>
@@ -204,7 +203,7 @@ if (!isset($user)) {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </header>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
