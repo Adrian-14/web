@@ -20,16 +20,14 @@ if (!isset($user)) {
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid">
       <main class="d-flex flex-nowrap">
-          <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+          <div class="d-flex flex-column p-3 text-bg-dark" style="width: 280px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px">
             <span class="fs-4">Control Panel</span>
             </a>
             <hr>
-            <ul class="nav nav-pills flex-column mb-auto" id="menu">
+            <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a href="controlpanel.php" class="nav-link active">
                   <i class="bi bi-house-fill me-2"></i><span> Inicio</span>
@@ -66,18 +64,16 @@ if (!isset($user)) {
               </li>
             </ul>
             <hr>
-            <div class="dropdown pb-4">
+            <div class="dropdown">
               <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
+                <strong class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></strong>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li><a class="dropdown-item" href="#">Sobre mi</a></li>
                 <li><a class="dropdown-item" href="#">Ajustes</a></li>
                 <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="cerrar_sesion.php">Cerrar Sesion</a></li>
               </ul>
             </div>
@@ -101,7 +97,7 @@ if (!isset($user)) {
                     </div>
                     <div class="col d-flex justify-content-end">
                       <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                      <strong class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></strong>
+                      <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
                     </div>
                   </div>
                 </div>
@@ -204,12 +200,11 @@ if (!isset($user)) {
           </div>
         </div>
       </main>
-    </div>
-  </header>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

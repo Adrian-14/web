@@ -64,19 +64,21 @@ body {
   vertical-align: -.125em;
   fill: currentColor;
 }
-@media(min-width: 992px){
-  .bd-sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5rem;
-    display: block !important;
-    height: calc(100vh - 6rem);
-    padding-left: 0.25rem;
-    margin-left: -0.25rem;
-    overflow-y: auto;
-  }
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
 }
 
-.bd-sidebar {
-  grid-area: sidebar;
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
