@@ -200,7 +200,7 @@ if (!isset($user)) {
                                                                         </div>
                                                                         <div class="modal-footer mx-auto">
                                                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                                                            <button type="button" class="btn btn-primary">Actualizar</button>
+                                                                            <button type="button" class="btn btn-success">Actualizar</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -208,7 +208,24 @@ if (!isset($user)) {
                                                         </div>
 
                                                         <div class="col-auto">
-                                                            <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModa2" data-bs-whatever="@getbootstrap"><i class="bi bi-trash"></i></button>
+                                                            <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h1 class="modal-title fs-5" id="exampleModalLabe2">Eliminar Dato</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <h1>¡ Seguro que quieres <span class="text-danger">ELIMINAR</span>!</h1>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>
