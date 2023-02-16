@@ -142,7 +142,7 @@ if (!isset($user)) {
                         <div class="container pt-5">
                             <div class="row">
                                 <table class="table table-striped table-sm align-middle table-edge table-nowrap mb-0">
-                                    <thead>
+                                    <thead class="text-center">
                                         <tr>
                                             <th scope="col">N°</th>
                                             <th scope="col">Nombre</th>
@@ -155,7 +155,7 @@ if (!isset($user)) {
                                     <tbody id="datos">
                                         <?php
                                         foreach ($query as $row) { ?>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <th scope="row"><?php echo $row['id']; ?></th>
                                                 <td><?php echo $row['nombre']; ?></td>
                                                 <td><?php echo $row['apellido1']; ?></td>
@@ -174,19 +174,19 @@ if (!isset($user)) {
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <form>
-                                                                                <div class="mb-3">
+                                                                                <div class="mb-3 text-start">
                                                                                     <label for="name" class="col-form-label">Nombre</label>
                                                                                     <input type="text" class="form-control" name="nombreedi" id="name">
                                                                                 </div>
-                                                                                <div class="mb-3">
+                                                                                <div class="mb-3 text-start">
                                                                                     <label for="message-text" class="col-form-label">Primer Apellido</label>
                                                                                     <input type="text" class="form-control" name="apellido1edi">
                                                                                 </div>
-                                                                                <div class="mb-3">
+                                                                                <div class="mb-3 text-start">
                                                                                     <label for="message-text" class="col-form-label">Segundo Apellido</label>
                                                                                     <input type="text" class="form-control" name="apellido2edi">
                                                                                 </div>
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 text-start">
                                                                                     <label for="inputState" class="form-label">Disiplina</label>
                                                                                     <select id="inputState" name="disciplinaedi" class="form-select">
                                                                                         <option selected>Selecciona...</option>
