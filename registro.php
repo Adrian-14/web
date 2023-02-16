@@ -209,7 +209,7 @@ if (!isset($user)) {
                                     <div class="row">
                                         <div class="col-md-3">
                                             <label for="inputState" class="form-label">Ciclo Escolar</label>
-                                            <select id="inputState" name="disciplina" class="form-select">
+                                            <select id="inputState" name="ciclo" class="form-select">
                                                 <option selected>Selecciona...</option>
                                                 <option value="2021-2022">2021 - 2022</option>
                                                 <option value="2022-2023">2022 - 2023</option>
@@ -221,7 +221,7 @@ if (!isset($user)) {
                                         </div>
                                         <div class="col-md-3">
                                             <label for="inputState" class="form-label">Disiplina</label>
-                                            <select id="inputState" name="disciplina" class="form-select">
+                                            <select id="inputState" name="disciplinains" class="form-select">
                                                 <option selected>Selecciona...</option>
                                                 <option value="Danza">Danza</option>
                                                 <option value="Teatro">Teatro</option>

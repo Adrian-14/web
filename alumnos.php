@@ -111,7 +111,7 @@ if (!isset($user)) {
                         <div class="container-fluid">
                             <div class="row">
                                 <table class="table table-striped table-sm align-middle table-edge table-nowrap mb-0">
-                                    <thead>
+                                    <thead class="text-center">
                                         <tr>
                                             <th scope="col">N°</th>
                                             <th scope="col">Foto</th>
@@ -119,29 +119,88 @@ if (!isset($user)) {
                                             <th scope="col">Primer Apellido</th>
                                             <th scope="col">Segundo Apellido</th>
                                             <th scope="col">Edad</th>
-                                            <th scope="col">Curp</th>
+                                            <th scope="col">Comunidad</th>
+                                            <th scope="col">Disciplina</th>
                                             <th scope="col">Acción</th>
                                         </tr>
                                     </thead>
                                     <tbody id="datos">
                                         <?php
                                         foreach ($query as $row) { ?>
-                                            <tr>
+                                            <tr class="text-center">
                                                 <th scope="row"><?php echo $row['id']; ?></th>
                                                 <td><img src="<?php echo $row['foto']; ?>" class="rounded-circle" width="70px" height="70px"></td>
                                                 <td><?php echo $row['nombre']; ?></td>
                                                 <td><?php echo $row['apellido1']; ?></td>
                                                 <td><?php echo $row['apellido2']; ?></td>
                                                 <td><?php echo $row['edad']; ?></td>
-                                                <td><?php echo $row['curp']; ?></td>
+                                                <td><?php echo $row['comunidad']; ?></td>
+                                                <td><?php echo $row['disciplinains']; ?></td>
                                                 <td>
                                                     <div class="row d-flex align-items-center justify-content-center">
                                                         <div class="col-auto">
-                                                            <button class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
+                                                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-pencil-square"></i></button>
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Datos</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <form>
+                                                                                <div class="mb-3">
+                                                                                    <label for="name" class="col-form-label">Nombre</label>
+                                                                                    <input type="text" class="form-control" name="nombreedi" id="name">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Primer Apellido</label>
+                                                                                    <input type="text" class="form-control" name="apellido1edi">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Segundo Apellido</label>
+                                                                                    <input type="text" class="form-control" name="apellido2edi">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <label for="inputState" class="form-label">Disiplina</label>
+                                                                                    <select id="inputState" name="disciplinaedi" class="form-select">
+                                                                                        <option selected>Selecciona...</option>
+                                                                                        <option value="Danza">Danza</option>
+                                                                                        <option value="Teatro">Teatro</option>
+                                                                                        <option value="Musica">Musica</option>
+                                                                                        <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="modal-footer mx-auto">
+                                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                                                            <button type="button" class="btn btn-success">Actualizar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
                                                         <div class="col-auto">
-                                                            <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModa2" data-bs-whatever="@getbootstrap"><i class="bi bi-trash"></i></button>
+                                                            <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h1 class="modal-title fs-5" id="exampleModalLabe2">Eliminar Dato</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-center">
+                                                                            <h4>¡ Seguro que quieres <span class="text-danger">ELIMINAR</span>!</h4>
+                                                                        </div>
+                                                                        <div class="modal-footer mx-auto">
+                                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                                                            <button type="button" class="btn btn-success">Aceptar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>

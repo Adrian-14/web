@@ -24,7 +24,7 @@ $municipioins = $_POST['municipioins'];
 $estadoins = $_POST['estadoins'];
 $ciclo = $_POST['ciclo'];
 $matricula = $_POST['matricula'];
-$disciplina = $_POST['disciplina'];
+$disciplina = $_POST['disciplinains'];
 $fechaingreso = $_POST['fechaingreso'];
 
 $insertar = "INSERT INTO alumnos (foto, nombre, apellido1, apellido2, edad, nacionalidad, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio, correo, institucion, domicilioins, municipioins, estadoins, ciclo, matricula, disciplinains, fechaingreso) VALUES ('$destino', '$nombre', '$apellido1', '$apellido2', '$edad', '$nacionalidad', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio', '$email', '$institucion', '$domicilioins', '$municipioins', '$estadoins', '$ciclo', '$matricula', '$disciplina', '$fechaingreso') ";
