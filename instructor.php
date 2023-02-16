@@ -216,12 +216,12 @@ if (!isset($user)) {
                                                                             <h1 class="modal-title fs-5" id="exampleModalLabe2">Eliminar Dato</h1>
                                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            <h1>¡ Seguro que quieres <span class="text-danger">ELIMINAR</span>!</h1>
+                                                                        <div class="modal-body text-center">
+                                                                            <h4>¡ Seguro que quieres <span class="text-danger">ELIMINAR</span>!</h4>
                                                                         </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                        <div class="modal-footer mx-auto">
+                                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                                                            <button type="button" class="btn btn-success">Aceptar</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
