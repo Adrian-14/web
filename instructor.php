@@ -175,18 +175,32 @@ if (!isset($user)) {
                                                                         <div class="modal-body">
                                                                             <form>
                                                                                 <div class="mb-3">
-                                                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                                                                    <input type="text" class="form-control" id="recipient-name">
+                                                                                    <label for="name" class="col-form-label">Nombre</label>
+                                                                                    <input type="text" class="form-control" name="nombreedi" id="name">
                                                                                 </div>
                                                                                 <div class="mb-3">
-                                                                                    <label for="message-text" class="col-form-label">Message:</label>
-                                                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                                                    <label for="message-text" class="col-form-label">Primer Apellido</label>
+                                                                                    <input type="text" class="form-control" name="apellido1edi">
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <label for="message-text" class="col-form-label">Segundo Apellido</label>
+                                                                                    <input type="text" class="form-control" name="apellido2edi">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <label for="inputState" class="form-label">Disiplina</label>
+                                                                                    <select id="inputState" name="disciplinaedi" class="form-select">
+                                                                                        <option selected>Selecciona...</option>
+                                                                                        <option value="Danza">Danza</option>
+                                                                                        <option value="Teatro">Teatro</option>
+                                                                                        <option value="Musica">Musica</option>
+                                                                                        <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
+                                                                                    </select>
                                                                                 </div>
                                                                             </form>
                                                                         </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                            <button type="button" class="btn btn-primary">Send message</button>
+                                                                        <div class="modal-footer mx-auto">
+                                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                                                            <button type="button" class="btn btn-primary">Actualizar</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
