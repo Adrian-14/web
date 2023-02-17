@@ -86,7 +86,7 @@ if (!isset($user)) {
         <div class="header">
           <div class="container-fluid">
             <div class="header-body">
-              <div class="row align-items-center row">
+              <div class="row align-items-center">
                 <div class="col">
                   <h6 class="header-pretitle fw-3">Inicio</h6>
                   <h1 class="header-title fs-3">Control Panel</h1>
