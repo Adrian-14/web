@@ -13,13 +13,14 @@ if (!isset($user)) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="stilopanel.css" />
   <title>Panel de Control</title>
 </head>
 
 <body id="body">
   <div class="container">
+
     <nav class="navbar">
       <div class="nav_icon" onclick="toggleSidebar()">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -36,54 +37,79 @@ if (!isset($user)) {
 
     <main>
       <div class="main__container">
-        <div class="container">
-          <div class="col py-0">
-            <div class="row d-flex align-items-center">
-              <div class="col-xl-5 col-lg-6">
-                <div class="row justify-content-center align-items-center g-2">
-                  <div class="col">Column</div>
-                  <div class="col">Column</div>
-                  <div class="col">Column</div>
-                  <div class="col">Column</div>
-                </div>
+        <div class="main__cards">
+          <div class="card">
+            <i class="bi bi-people-fill"></i>
+            <div class="card_inner">
+              <p class="text-primary-p">Alumnos</p>
+              <span class="font-bold text-title"><?php echo $rowcount; ?></span>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="bi bi-person-video3"></i>
+            <div class="card_inner">
+              <p class="text-primary-p">Instructores</p>
+              <span class="font-bold text-title">2467</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa fa-video-camera fa-2x text-yellow" aria-hidden="true"></i>
+            <div class="card_inner">
+              <p class="text-primary-p">Number of Videos</p>
+              <span class="font-bold text-title">340</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa fa-thumbs-up fa-2x text-green" aria-hidden="true"></i>
+            <div class="card_inner">
+              <p class="text-primary-p">Number of Likes</p>
+              <span class="font-bold text-title">645</span>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="charts__left">
+            <div class="charts__left__title">
+              <div>
+                <h1>Daily Reports</h1>
+                <p>Cupertino, California, USA</p>
               </div>
-              <div class="col-xl-7 col-lg-6">
-                <div class="main__cards card border-0 shadow">
-                  <div class="card-body">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                      <h4 class="text-muted">Total de Alumnos por Comunidad</h4>
-                    </div>
-                    <div>
-                      <canvas id="myChart"></canvas>
-                    </div>
+              <i class="fa fa-usd" aria-hidden="true"></i>
+            </div>
+            <div id="apex1"></div>
+          </div>
 
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <div class="charts__right">
+            <div class="charts__right__title">
+              <div>
+                <h1>Stats Reports</h1>
+                <p>Cupertino, California, USA</p>
+              </div>
+              <i class="fa fa-usd" aria-hidden="true"></i>
+            </div>
 
-                    <script>
-                      const ctx = document.getElementById('myChart');
+            <div class="charts__right__cards">
+              <div class="card1">
+                <h1>Income</h1>
+                <p>$75,300</p>
+              </div>
 
-                      new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                          datasets: [{
-                            label: 'Numero de Alumnos',
-                            data: [12, 19, 3, 5, 2, 3],
-                            borderWidth: 1
-                          }]
-                        },
-                        options: {
-                          scales: {
-                            y: {
-                              beginAtZero: true
-                            }
-                          }
-                        }
-                      });
-                      let url = 'http://localhost/web/total.php'
-                    </script>
-                  </div>
-                </div>
+              <div class="card2">
+                <h1>Sales</h1>
+                <p>$124,200</p>
+              </div>
+
+              <div class="card3">
+                <h1>Users</h1>
+                <p>3900</p>
+              </div>
+
+              <div class="card4">
+                <h1>Orders</h1>
+                <p>1881</p>
               </div>
             </div>
           </div>
@@ -94,7 +120,7 @@ if (!isset($user)) {
     <div id="sidebar">
       <div class="sidebar__title">
         <div class="sidebar__img">
-          <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px"/>
+          <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px" />
           <h1>Control Panel</h1>
         </div>
         <i onclick="closeSidebar()" class="fa fa-times" id="sidebarIcon" aria-hidden="true"></i>
