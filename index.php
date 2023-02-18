@@ -50,7 +50,7 @@ if (!isset($user)) {
             <i class="bi bi-person-video3"></i>
             <div class="card_inner">
               <p class="text-primary-p">Instructores</p>
-              <span class="font-bold text-title">2467</span>
+              <span class="font-bold text-title"><?php echo $rowcountins; ?></span>
             </div>
           </div>
 
@@ -74,44 +74,52 @@ if (!isset($user)) {
           <div class="charts__left">
             <div class="charts__left__title">
               <div>
-                <h1>Daily Reports</h1>
-                <p>Cupertino, California, USA</p>
+                <h1>Grafica</h1>
+                <p>Alumnos por Comunidad</p>
               </div>
-              <i class="fa fa-usd" aria-hidden="true"></i>
+
             </div>
-            <div id="apex1"></div>
+            <div class="pt-5">
+              <div class="pt-4">
+                <canvas id="myChart"></canvas>
+              </div>
+
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+              <script>
+                const ctx = document.getElementById('myChart');
+
+                new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                      label: 'Numero de Alumnos',
+                      data: [12, 19, 3, 5, 2, 3],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+                let url = 'http://localhost/web/total.php'
+              </script>
+            </div>
           </div>
 
           <div class="charts__right">
             <div class="charts__right__title">
               <div>
-                <h1>Stats Reports</h1>
-                <p>Cupertino, California, USA</p>
-              </div>
-              <i class="fa fa-usd" aria-hidden="true"></i>
-            </div>
-
-            <div class="charts__right__cards">
-              <div class="card1">
-                <h1>Income</h1>
-                <p>$75,300</p>
-              </div>
-
-              <div class="card2">
-                <h1>Sales</h1>
-                <p>$124,200</p>
-              </div>
-
-              <div class="card3">
-                <h1>Users</h1>
-                <p>3900</p>
-              </div>
-
-              <div class="card4">
-                <h1>Orders</h1>
-                <p>1881</p>
+                <h1>Lista</h1>
+                <p>Alumnos</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -155,7 +163,6 @@ if (!isset($user)) {
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script src="script.js"></script>
 </body>
 
