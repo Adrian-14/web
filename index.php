@@ -7,125 +7,22 @@ if (!isset($user)) {
 } else {
 }
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="stilopanel.css" />
   <title>Panel de Control</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/controlstyle.css">
+
 </head>
 
-<body id="body">
-  <div class="container">
-
-    <nav class="navbar">
-      <div class="nav_icon" onclick="toggleSidebar()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
-      <div class="navbar__left">
-        <h6 class="header-pretitle fw-3">Inicio</h6>
-        <h1 class="header-title fs-3">Panel de Control</h1>
-      </div>
-      <div class="navbar__right">
-        <img src="myAvatar.png" width="30" height="30" class="rounded-circle" alt="avantar">
-        <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
-      </div>
-    </nav>
-
-    <main>
-      <div class="main__container">
-        <div class="main__cards">
-          <div class="card">
-            <i class="bi bi-people-fill"></i>
-            <div class="card_inner">
-              <p class="text-primary-p">Alumnos</p>
-              <span class="font-bold text-title"><?php echo $rowcount; ?></span>
-            </div>
-          </div>
-
-          <div class="card">
-            <i class="bi bi-person-video3"></i>
-            <div class="card_inner">
-              <p class="text-primary-p">Instructores</p>
-              <span class="font-bold text-title"><?php echo $rowcountins; ?></span>
-            </div>
-          </div>
-
-          <div class="card">
-            <i class="fa fa-video-camera fa-2x text-yellow" aria-hidden="true"></i>
-            <div class="card_inner">
-              <p class="text-primary-p">Number of Videos</p>
-              <span class="font-bold text-title">340</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <i class="fa fa-thumbs-up fa-2x text-green" aria-hidden="true"></i>
-            <div class="card_inner">
-              <p class="text-primary-p">Number of Likes</p>
-              <span class="font-bold text-title">645</span>
-            </div>
-          </div>
-        </div>
-        <div class="charts">
-          <div class="charts__left">
-            <div class="charts__left__title">
-              <div>
-                <h1>Grafica</h1>
-                <p>Alumnos por Comunidad</p>
-              </div>
-
-            </div>
-            <div class="pt-5">
-              <div class="pt-4">
-                <canvas id="myChart"></canvas>
-              </div>
-
-              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-              <script>
-                const ctx = document.getElementById('myChart');
-
-                new Chart(ctx, {
-                  type: 'bar',
-                  data: {
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                    datasets: [{
-                      label: 'Numero de Alumnos',
-                      data: [12, 19, 3, 5, 2, 3],
-                      borderWidth: 1
-                    }]
-                  },
-                  options: {
-                    scales: {
-                      y: {
-                        beginAtZero: true
-                      }
-                    }
-                  }
-                });
-                let url = 'http://localhost/web/total.php'
-              </script>
-            </div>
-          </div>
-
-          <div class="charts__right">
-            <div class="charts__right__title">
-              <div>
-                <h1>Lista</h1>
-                <p>Alumnos</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div id="sidebar">
+<body>
+  <main class="d-flex flex-nowrap">
+  <div id="sidebar">
       <div class="sidebar__title">
         <div class="sidebar__img">
           <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px" />
@@ -163,6 +60,133 @@ if (!isset($user)) {
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
+
+    <div class="col py-0">
+      <div class="main-content">
+        <div class="header">
+          <div class="container-fluid">
+            <div class="header-body">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="header-pretitle fw-3">Inicio</h6>
+                  <h1 class="header-title fs-3">Control Panel</h1>
+                </div>
+                <div class="col">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
+                  <span class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-xl-5 col-lg-6">
+              <div class="row">
+                <div class="col-6">
+                  <div class="widget-flat card mb-4 border-0 shadow">
+                    <div class="card-body">
+                      <div class="float-start">
+                        <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                        <p class="mb-0 text-muted">Cursando</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="widget-flat card mb-4 border-0 shadow">
+                    <div class="card-body">
+                      <div class="float-start">
+                        <h5 class="fw-normal mt-0 text-muted">Instructores</h5>
+                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcountins; ?></span></h3>
+                        <p class="mb-0 text-muted">Dando Clases</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="widget-flat card border-0 shadow">
+                    <div class="card-body">
+                      <div class="float-start">
+                        <h5 class="fw-normal mt-0 text-muted">Diciplinas</h5>
+                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                        <p class="mb-0 text-muted">Actuales</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="widget-flat card border-0 shadow">
+                    <div class="card-body">
+                      <div class="float-start">
+                        <h5 class="fw-normal mt-0 text-muted">Comunidades</h5>
+                        <h3 class="mt-3 mb-3 text-center"><span class="h2 mb-0"><?php echo $rowcount; ?></span></h3>
+                        <p class="mb-0 text-muted">Ingresadas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-6">
+              <div class="card-h-100 card border-0 shadow">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h4 class="header-title text-muted">Total de Alumnos por Comunidad</h4>
+                  </div>
+                  <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                  <script>
+                    const ctx = document.getElementById('myChart');
+
+                    new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                          label: 'Numero de Alumnos',
+                          data: [12, 19, 3, 5, 2, 3],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                    let url = 'http://localhost/web/total.php'
+                  </script>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
   <script src="script.js"></script>
 </body>
 

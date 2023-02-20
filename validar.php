@@ -11,7 +11,7 @@ $array=mysqli_fetch_array($respuesta);
 
 if($array['contar'] > 0){
     $_SESSION['user'] = $user;
-    header("location:controlpanel.php");
+    header("location:index.php");
 }else{
     ?>
     <?php
