@@ -16,70 +16,51 @@ if (!isset($user)) {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="controlstyle.css">
+  <link rel="stylesheet" href="/controlstyle.css">
+
 </head>
 
 <body>
   <main class="d-flex flex-nowrap">
-    <div class="d-flex flex-column p-3 text-bg-dark" style="width: 280px;">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px">
-        <span class="fs-4">Control Panel</span>
-      </a>
-      <hr>
-      <ul class="nav nav-pills d-flex flex-column mb-auto">
-        <li class="nav-item">
-          <a href="controlpanel.php" class="nav-link active">
-            <i class="bi bi-house-fill me-2"></i><span> Inicio</span>
-          </a>
-        </li>
-        <li>
-          <a href="alumnos.php" class="nav-link text-white">
-            <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
-          </a>
-        </li>
-        <li>
-          <a href="registro.php" class="nav-link text-white">
-            <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="bi bi-table me-2"></i> <span class="ms-1 d-none d-sm-inline">Asistencia</span></a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
-        </li>
-        <li>
-          <a href="instructor.php" class="nav-link text-white">
-            <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
-        </li>
-      </ul>
-      <hr>
-      <div class="dropdown">
-        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-          <strong class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></strong>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-          <li><a class="dropdown-item" href="#">Sobre mi</a></li>
-          <li><a class="dropdown-item" href="#">Ajustes</a></li>
-          <li><a class="dropdown-item" href="#">Perfil</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="cerrar_sesion.php">Cerrar Sesion</a></li>
-        </ul>
+  <div id="sidebar">
+      <div class="sidebar__title">
+        <div class="sidebar__img">
+          <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px" />
+          <h1>Control Panel</h1>
+        </div>
+        <i onclick="closeSidebar()" class="fa fa-times" id="sidebarIcon" aria-hidden="true"></i>
+      </div>
+
+      <div class="sidebar__menu">
+        <div class="sidebar__link active_menu_link">
+          <i class="fa fa-home"></i>
+          <a href="index.php">Inicio</a>
+        </div>
+        <h2>Menu</h2>
+        <div class="sidebar__link">
+          <i class="fa fa-user-secret" aria-hidden="true"></i>
+          <a href="alumnos.php" class="nav-link">Alumnos</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-building-o"></i>
+          <a href="#">Instructor</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-wrench"></i>
+          <a href="#">Registro</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-archive"></i>
+          <a href="#">Asistencia</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-handshake-o"></i>
+          <a href="#">Disiplinas</a>
+        </div>
       </div>
     </div>
+  </div>
+  <script src="script.js"></script>
 
     <div class="col py-0">
       <div class="main-content">
