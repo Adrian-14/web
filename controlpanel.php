@@ -1,17 +1,22 @@
+<?php
+require "total.php";
+session_start();
+$user = $_SESSION['user'];
+if (!isset($user)) {
+  header("location:login.php");
+} else {
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Panel de Control</title>
+    <title>Control Panel</title>
   </head>
   <body>
     <!-- top navigation bar -->
@@ -29,7 +34,7 @@
         <a
           class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
           href="#"
-          ><i class="bi bi-bootstrap-fill me-2"></i>Panel de Control</a
+          >Frontendfunn</a
         >
         <button
           class="navbar-toggler"
@@ -68,10 +73,10 @@
                 <i class="bi bi-person-fill"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle me-1"></i>Perfil</a></li>
-                <li><a class="dropdown-item" href="#"><i class="bi bi-gear-fill me-1"></i>Ajustes</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <a class="dropdown-item text-danger" href="#"><i class="bi bi-power me-1"></i>Cerrar Sesion</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
             </li>
@@ -82,16 +87,17 @@
     <!-- top navigation bar -->
     <!-- offcanvas -->
     <div
-      class="offcanvas offcanvas-start sidebar-nav bg-dark"
+      class="offcanvas offcanvas-start text-white sidebar-nav bg-dark"
       tabindex="-1"
-      id="sidebar"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
     >
       <div class="offcanvas-body p-0">
         <nav class="navbar-dark">
           <ul class="navbar-nav">
             <li>
               <div class="text-muted small fw-bold text-uppercase px-3">
-                Menu
+                CORE
               </div>
             </li>
             <li>
@@ -103,7 +109,7 @@
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
             <li>
               <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-                Alumnos
+                Interface
               </div>
             </li>
             <li>
@@ -113,7 +119,7 @@
                 href="#layouts"
               >
                 <span class="me-2"><i class="bi bi-layout-split"></i></span>
-                <span>Datos</span>
+                <span>Layouts</span>
                 <span class="ms-auto">
                   <span class="right-icon">
                     <i class="bi bi-chevron-down"></i>
@@ -142,7 +148,7 @@
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
             <li>
               <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-                Maestros
+                Addons
               </div>
             </li>
             <li>
@@ -738,11 +744,7 @@
         </div>
       </div>
     </main>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
-    <script src="./js/jquery-3.5.1.js"></script>
-    <script src="./js/jquery.dataTables.min.js"></script>
-    <script src="./js/dataTables.bootstrap5.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   </body>
 </html>
