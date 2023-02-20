@@ -10,78 +10,146 @@ if (!isset($user)) {
 <html lang="es">
 
 <head>
-    <title>Panel de Control</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="controlstyle.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Registro</title>
 </head>
 
 <body>
-
-    <main class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="d-flex flex-column p-3 text-bg-dark" style="width: 280px;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <img src="bootstrap-logo.svg" alt="logo" width="40px" height="32px">
-                    <span class="fs-4">Control Panel</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills d-flex flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="controlpanel.php" class="nav-link text-white">
-                            <i class="bi bi-house-fill me-2"></i><span> Inicio</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+            </button>
+            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#"><i class="bi bi-bootstrap-fill me-2"></i>Panel de Control</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar" aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <form class="d-flex ms-auto my-3 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="alumnos.php" class="nav-link text-white">
-                            <i class="bi bi-people-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Alumnos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="registro.php" class="nav-link text-white active">
-                            <i class="bi bi-calendar3 me-2"></i><span class="ms-1 d-none d-sm-inline">Registro</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <i class="bi bi-table me-2"></i> <span class="ms-1 d-none d-sm-inline">Asistencia</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <i class="bi bi-clipboard2-check-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Calificaciones</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <i class="bi bi-card-checklist me-2"></i><span class="ms-1 d-none d-sm-inline">Kardex</span> </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <i class="bi bi-briefcase-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Disiplinas</span> </a>
-                    </li>
-                    <li>
-                        <a href="instructor.php" class="nav-link text-white">
-                            <i class="bi bi-person-square me-2"></i><span class="ms-1 d-none d-sm-inline">Instructor</span> </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="bi bi-person-circle me-1"></i>Perfil</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="bi bi-gear-fill me-1"></i>Ajustes</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-danger" href="#"><i class="bi bi-power me-1"></i>Cerrar Sesion</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-                <hr>
-                <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="myAvatar.png" alt="avatar" width="30" height="30" class="rounded-circle">
-                        <strong class="d-none d-sm-inline mx-1"><?php echo $_SESSION['user']; ?></strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">Sobre mi</a></li>
-                        <li><a class="dropdown-item" href="#">Ajustes</a></li>
-                        <li><a class="dropdown-item" href="#">Perfil</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="cerrar_sesion.php">Cerrar Sesion</a></li>
-                    </ul>
-                </div>
             </div>
+        </div>
+    </nav>
 
+    <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3">
+                            Menu
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.php" class="nav-link px-3 active">
+                            <span class="me-2"><i class="bi bi-house-fill"></i></span>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                            Alumnos
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts">
+                            <span class="me-2"><i class="bi bi-database-fill"></i></span>
+                            <span>Datos</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="layouts">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="alumnos.php" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-person-lines-fill"></i></span>
+                                        <span>Lista de Alumnos</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="registro.php" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-person-rolodex"></i></span>
+                                        <span>Registro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-person-check-fill"></i></span>
+                                        <span>Asistencia</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-clipboard-check-fill"></i></span>
+                                        <span>Calificaciones</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                            Maestros
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-inboxes-fill"></i></span>
+                            <span>Disciplinas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="instructor.php" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-person-video3"></i></span>
+                            <span>Instructores</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="mt-5 pt-3">
+        <div class="container-fluid">
             <div class="col py-3">
                 <div class="main-content">
                     <div class="header">
@@ -89,8 +157,7 @@ if (!isset($user)) {
                             <div class="header-body">
                                 <div class="row align-items-end row">
                                     <div class="col">
-                                        <h6 class="header-pretitle">Registro</h6>
-                                        <h1 class="header-title">Registro de Alumnos</h1>
+                                        <h6 class="header-pretitle">Registro de Alumnos</h6>
                                     </div>
                                 </div>
                             </div>
