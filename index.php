@@ -88,7 +88,7 @@ if (!isset($user)) {
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-danger" href="#"
+                  <a class="dropdown-item text-danger" href="cerrar_sesion.php"
                     ><i class="bi bi-power me-1"></i>Cerrar Sesion</a
                   >
                 </li>
@@ -202,7 +202,7 @@ if (!isset($user)) {
     <main class="mt-5 pt-3">
       <div class="container-fluid">
         <div class="row d-flex align-items-center">
-          <h2 class="mt-2">Información General</h2>
+          <h2 class="mt-3 mb-3 text-muted">Información General</h2>
           <div class="col-xl-6 col-lg-6">
             <div class="row">
               <div class="col-6">
