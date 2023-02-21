@@ -211,7 +211,7 @@ if (!isset($user)) {
                     <div class="text-center">
                       <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
                       <h3 class="mt-3 mb-3 text-center">
-                        <span class="mb-0">2</span>
+                        <span class="mb-0">3</span>
                       </h3>
                       <p class="text-muted">Cursando</p>
                     </div>
