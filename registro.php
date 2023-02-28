@@ -111,13 +111,13 @@ if (!isset($user)) {
                                 <li>
                                     <a href="#" class="nav-link px-3">
                                         <span class="me-2"><i class="bi bi-person-check-fill"></i></span>
-                                        <span>Asistencia</span>
+                                        <span>Talleres Internos</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="nav-link px-3">
                                         <span class="me-2"><i class="bi bi-clipboard-check-fill"></i></span>
-                                        <span>Calificaciones</span>
+                                        <span>Talleres Externos</span>
                                     </a>
                                 </li>
                             </ul>
