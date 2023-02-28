@@ -162,7 +162,7 @@ if (!isset($user)) {
                       <span class="me-2"
                         ><i class="bi bi-person-check-fill"></i
                       ></span>
-                      <span>Asistencia</span>
+                      <span>Talleres Internos</span>
                     </a>
                   </li>
                   <li>
@@ -170,7 +170,7 @@ if (!isset($user)) {
                       <span class="me-2"
                         ><i class="bi bi-clipboard-check-fill"></i
                       ></span>
-                      <span>Calificaciones</span>
+                      <span>Talleres Externos</span>
                     </a>
                   </li>
                 </ul>
@@ -222,11 +222,11 @@ if (!isset($user)) {
                 <div class="card mb-4 border-0 shadow">
                   <div class="card-body">
                     <div class="text-center">
-                      <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                      <h5 class="fw-normal mt-0 text-muted">Maestros</h5>
                       <h3 class="mt-3 mb-3 text-center">
                         <span class="mb-0">2</span>
                       </h3>
-                      <p class="text-muted">Cursando</p>
+                      <p class="text-muted">Dando Clase</p>
                     </div>
                   </div>
                 </div>
@@ -237,11 +237,11 @@ if (!isset($user)) {
                 <div class="card mb-4 border-0 shadow">
                   <div class="card-body">
                     <div class="text-center">
-                      <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                      <h5 class="fw-normal mt-0 text-muted">Talleres</h5>
                       <h3 class="mt-3 mb-3 text-center">
                         <span class="mb-0">2</span>
                       </h3>
-                      <p class="text-muted">Cursando</p>
+                      <p class="text-muted">Activos</p>
                     </div>
                   </div>
                 </div>
@@ -250,11 +250,11 @@ if (!isset($user)) {
                 <div class="card mb-4 border-0 shadow">
                   <div class="card-body">
                     <div class="text-center">
-                      <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
+                      <h5 class="fw-normal mt-0 text-muted">Comunidades</h5>
                       <h3 class="mt-3 mb-3 text-center">
                         <span class="mb-0">2</span>
                       </h3>
-                      <p class="text-muted">Cursando</p>
+                      <p class="text-muted">En Total</p>
                     </div>
                   </div>
                 </div>
