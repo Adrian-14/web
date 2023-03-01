@@ -167,8 +167,7 @@ if (!isset($user)) {
                                     <th scope="col">Apellido(1)</th>
                                     <th scope="col">Apellido(2)</th>
                                     <th scope="col">Telefono</th>
-                                    <th scope="col">Correo</th>
-                                    <th scope="col">Disciplina</th>
+                                    <th scope="col">Taller</th>
                                     <th scope="col">Acción</th>
                                 </tr>
                             </thead>
@@ -182,7 +181,6 @@ if (!isset($user)) {
                                         <td><?php echo $row['apellido1']; ?></td>
                                         <td><?php echo $row['apellido2']; ?></td>
                                         <td><?php echo $row['telefono']; ?></td>
-                                        <td><?php echo $row['correo']; ?></td>
                                         <td><?php echo $row['disciplinains']; ?></td>
                                         <td>
                                             <div class="row d-flex align-items-center justify-content-center">
