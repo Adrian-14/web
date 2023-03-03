@@ -284,17 +284,24 @@ if (!isset($user)) {
                     type: "bar",
                     data: {
                       labels: [
-                        "Red",
-                        "Blue",
-                        "Yellow",
-                        "Green",
-                        "Purple",
-                        "Orange",
+                        "Artes Plasticas Juvenil",
+                        "Artes Plasticas Infantil",
+                        "Ajedrez",
+                        "Lengua Otomi",
+                        "Banda de Viento",
+                        "Violin",
+                        "Guitarra",
+                        "Dibujo Artistico",
+                        "Pintura en Tela",
+                        "Club de Tareas",
+                        "Computacion Basico",
+                        "Hora de cuento",
+                        "Circulos de lectura para Jovenes",
                       ],
                       datasets: [
                         {
                           label: "Numero de Alumnos",
-                          data: [12, 19, 3, 5, 2, 3],
+                          data: [12, 19, 3, 5, 2, 3, 6, 12, 16, 25, 10, 8, 0],
                           borderWidth: 1,
                         },
                       ],
@@ -328,12 +335,12 @@ if (!isset($user)) {
                   >
                     <thead>
                       <tr>
-                        <th>Matricula</th>
+                        <th>N°</th>
                         <th>Foto</th>
                         <th>Nombre</th>
-                        <th>Primer Apellido</th>
-                        <th>Segundo Apellido</th>
-                        <th>Disciplina</th>
+                        <th>1er Apellido</th>
+                        <th>2do Apellido</th>
+                        <th>Teller</th>
                       </tr>
                     </thead>
                     <tbody>

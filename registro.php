@@ -33,7 +33,7 @@ if (!isset($user)) {
             <div class="collapse navbar-collapse" id="topNavBar">
                 <form class="d-flex ms-auto my-3 my-lg-0">
                     <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search" />
                         <button class="btn btn-primary" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
@@ -167,7 +167,7 @@ if (!isset($user)) {
                         <div class="row">
                             <form action="alta.php" method="POST" enctype="multipart/form-data">
                                 <div class="row">
-                                    <h2 class="display-6">Datos del Estudiante</h2>
+                                    <h2 class="display-6">Datos del Alumno</h2>
                                     <div class="col-md-12">
                                         <label for="formFile" class="form-label">Foto</label>
                                         <div class="col-sm-12 col-md-6">
