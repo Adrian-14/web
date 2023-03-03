@@ -137,7 +137,7 @@ if (!isset($user)) {
           <li>
             <a href="#" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-inboxes-fill"></i></span>
-              <span>Disciplinas</span>
+              <span>Talleres</span>
             </a>
           </li>
           <li>
@@ -220,103 +220,10 @@ if (!isset($user)) {
                 <h4 class="header-title text-muted">
                   Total de Comunidades
                 </h4>
-              </div>
-              <div>
-                <canvas id="tallerlibre"></canvas>
-              </div>
-
-              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-              <script>
-                const ctx = document.getElementById("tallerlibre");
-
-                new Chart(ctx, {
-                  type: "doughnut",
-                  data: {
-                    labels: [
-                      "Cadereyta",
-                      "San Gaspar",
-                      "San Diego",
-                      "Villa Guerrero",
-                      "El Refugio",
-                    ],
-                    datasets: [{
-                      label: "Numero de Alumnos",
-                      data: [12, 19, 3, 5, 2],
-                      borderWidth: 1,
-                    }, ],
-                  },
-                  options: {
-                    scales: {
-                      y: {
-                        beginAtZero: true,
-                      },
-                    },
-                  },
-                });
-              </script>
+              </div>  
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="col-xl-6 col-lg-6">
-            <div class="card border-0 shadow">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <h4 class="header-title text-muted">
-                    Total de Alumnos por Taller Libre
-                  </h4>
-                </div>
-                <div>
-                  <canvas id="myChart"></canvas>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                  const ctx = document.getElementById("myChart");
-
-                  new Chart(ctx, {
-                    type: "bar",
-                    data: {
-                      labels: [
-                        "Artes Plasticas Juvenil",
-                        "Artes Plasticas Infantil",
-                        "Ajedrez",
-                        "Lengua Otomi",
-                        "Banda de Viento",
-                        "Violin",
-                        "Guitarra",
-                        "Dibujo Artistico",
-                        "Pintura en Tela",
-                        "Club de Tareas",
-                        "Computacion Basico",
-                        "Hora de cuento",
-                        "Circulos de lectura para Jovenes",
-                      ],
-                      datasets: [{
-                        label: "Numero de Alumnos",
-                        data: [12, 19, 3, 5, 2, 3, 6, 12, 16, 25, 10, 8, 0],
-                        borderWidth: 1,
-                      }, ],
-                    },
-                    options: {
-                      scales: {
-                        y: {
-                          beginAtZero: true,
-                        },
-                      },
-                    },
-                  });
-                  let url = "http://localhost/web/total.php";
-                </script>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col"></div>
       </div>
       <div class="row">
         <div class="col-md-12 mb-3">

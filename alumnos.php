@@ -137,7 +137,7 @@ if (!isset($user)) {
                     <li>
                         <a href="#" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-inboxes-fill"></i></span>
-                            <span>Disciplinas</span>
+                            <span>Talleres</span>
                         </a>
                     </li>
                     <li>
