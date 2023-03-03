@@ -241,13 +241,41 @@ if (!isset($user)) {
                                         <input type="text" name="municipio" class="form-control" aria-label="curp">
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="inputState" class="form-label">Teller</label>
+                                        <label for="inputState" class="form-label">Teller Libre</label>
                                         <select id="inputState" name="disciplinains" class="form-select">
-                                            <option selected>Selecciona...</option>
+                                            <option selected value="none">Selecciona...</option>
                                             <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
-                                            <option value="Teatro">Teatro</option>
-                                            <option value="Musica">Musica</option>
-                                            <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
+                                            <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
+                                            <option value="Ajedrez">Ajedrez</option>
+                                            <option value="Lengua Otomi">Lengua Otomi</option>
+                                            <option value="Banda de Viento">Banda de Viento</option>
+                                            <option value="Violin">Violin</option>
+                                            <option value="Guitarra">Guitarra</option>
+                                            <option value="Dibujo Artistico">Dibujo Artistico</option>
+                                            <option value="Pintura en Tela">Pintura en Tela</option>
+                                            <option value="Club de Tareas">Club de Tareas</option>
+                                            <option value="Computacion Basico">Computacion Basico</option>
+                                            <option value="Hora de cuento">Hora de cuento</option>
+                                            <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="inputState" class="form-label">Teller Externo</label>
+                                        <select id="inputState" name="tallerexterno" class="form-select">
+                                            <option selected value="none">Selecciona...</option>
+                                            <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
+                                            <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
+                                            <option value="Ajedrez">Ajedrez</option>
+                                            <option value="Lengua Otomi">Lengua Otomi</option>
+                                            <option value="Banda de Viento">Banda de Viento</option>
+                                            <option value="Violin">Violin</option>
+                                            <option value="Guitarra">Guitarra</option>
+                                            <option value="Dibujo Artistico">Dibujo Artistico</option>
+                                            <option value="Pintura en Tela">Pintura en Tela</option>
+                                            <option value="Club de Tareas">Club de Tareas</option>
+                                            <option value="Computacion Basico">Computacion Basico</option>
+                                            <option value="Hora de cuento">Hora de cuento</option>
+                                            <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
                                         </select>
                                     </div>
                                     <div class="col-md-3">
