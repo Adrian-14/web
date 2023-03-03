@@ -268,7 +268,7 @@ if (!isset($user)) {
                   class="d-flex align-items-center"
                 >
                   <h4 class="header-title text-muted">
-                    Total de Alumnos por Comunidad
+                    Total de Alumnos por Taller Libre
                   </h4>
                 </div>
                 <div>

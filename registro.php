@@ -188,12 +188,35 @@ if (!isset($user)) {
                                         <input type="text" name="apellido2" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="formFile" class="form-label">Edad</label>
-                                        <input type="text" name="edad" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
+                                        <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                                        <input type="date" name="fecha_naci" class="form-control" aria-label="fecha">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="formFile" class="form-label">Edad</label>
+                                        <input type="text" name="edad" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="don" class="form-label">Domicilio</label>
+                                        <input type="text" name="domicilio" class="form-control" aria-label="curp">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="correo" class="form-label">Correo</label>
+                                        <input type="email" name="correo" class="form-control" aria-label="curp">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="correo" class="form-label">Telefono</label>
+                                        <input type="num" name="telefono" class="form-control" aria-label="curp">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="correo" class="form-label">Telefono de Emergencia</label>
+                                        <input type="num" name="telefonoemergencia" class="form-control" aria-label="curp">
+                                    </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Genero</label>
                                         <select id="inputState" name="genero" class="form-select">
@@ -203,76 +226,25 @@ if (!isset($user)) {
                                         </select>
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="fecha" class="form-label">Fecha de Nacimiento</label>
-                                        <input type="date" name="fecha_naci" class="form-control" aria-label="fecha">
+                                        <label for="curp" class="form-label">Grado de Estudios</label>
+                                        <input type="text" name="Grado" class="form-control" aria-label="curp">
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="correo" class="form-label">Telefono</label>
-                                        <input type="num" name="telefono" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="correo" class="form-label">Correo</label>
-                                        <input type="email" name="correo" class="form-control" aria-label="curp">
+                                        <label for="comu" class="form-label">Localidad</label>
+                                        <input type="text" name="localidad" class="form-control" aria-label="curp">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="curp" class="form-label">CURP</label>
-                                        <input type="text" name="curp" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="don" class="form-label">Domicilio</label>
-                                        <input type="text" name="domicilio" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="comu" class="form-label">Comunidad</label>
-                                        <input type="text" name="comunidad" class="form-control" aria-label="curp">
-                                    </div>
                                     <div class="col-md-3">
                                         <label for="mun" class="form-label">Municipio</label>
                                         <input type="text" name="municipio" class="form-control" aria-label="curp">
                                     </div>
-                                </div>
-                                <br>
-                                <h2 class="display-6">Solicitud de Ingreso</h2>
-                                <div class="row">
                                     <div class="col-md-3">
-                                        <label for="don" class="form-label">Institucion</label>
-                                        <input type="text" name="institucionins" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="don" class="form-label">Domicilio</label>
-                                        <input type="text" name="domicilioins" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="don" class="form-label">Municipio</label>
-                                        <input type="text" name="municipioins" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="don" class="form-label">Estado</label>
-                                        <input type="text" name="estadoins" class="form-control" aria-label="curp">
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="inputState" class="form-label">Ciclo Escolar</label>
-                                        <select id="inputState" name="ciclo" class="form-select">
-                                            <option selected>Selecciona...</option>
-                                            <option value="2021-2022">2021 - 2022</option>
-                                            <option value="2022-2023">2022 - 2023</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="don" class="form-label">Matricula</label>
-                                        <input type="text" name="matricula" class="form-control" aria-label="curp">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="inputState" class="form-label">Disiplina</label>
+                                        <label for="inputState" class="form-label">Teller</label>
                                         <select id="inputState" name="disciplinains" class="form-select">
                                             <option selected>Selecciona...</option>
-                                            <option value="Danza">Danza</option>
+                                            <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
                                             <option value="Teatro">Teatro</option>
                                             <option value="Musica">Musica</option>
                                             <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
@@ -284,8 +256,10 @@ if (!isset($user)) {
                                     </div>
                                 </div>
                                 <br>
-                                <div class="col text-center">
-                                    <button class="btn btn-success btn-lg" type="submit">Aceptar</button>
+                                <br>
+                                <div class="col text-end">
+                                    <button class="btn btn-success" type="submit">Aceptar</button>
+                                    <button class="btn btn-danger" type="submit">Cancelar</button>
                                 </div>
                             </form>
                         </div>

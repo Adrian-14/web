@@ -11,6 +11,7 @@ $apellido1 = $_POST['apellido1'];
 $apellido2 = $_POST['apellido2'];
 $edad = $_POST['edad'];
 $telefono = $_POST['telefono'];
+$telefonoemergencia = $_POST['telefonoemergencia'];
 $genero = $_POST['genero'];
 $fecha_nacimiento = $_POST['fecha_naci'];
 $curp = $_POST['curp'];
@@ -27,7 +28,7 @@ $matricula = $_POST['matricula'];
 $disciplina = $_POST['disciplinains'];
 $fechaingreso = $_POST['fechaingreso'];
 
-$insertar = "INSERT INTO alumnos (foto, nombre, apellido1, apellido2, edad, telefono, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio, correo, institucion, domicilioins, municipioins, estadoins, ciclo, matricula, disciplinains, fechaingreso) VALUES ('$destino', '$nombre', '$apellido1', '$apellido2', '$edad', '$telefono', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio', '$email', '$institucion', '$domicilioins', '$municipioins', '$estadoins', '$ciclo', '$matricula', '$disciplina', '$fechaingreso') ";
+$insertar = "INSERT INTO alumnos (foto, nombre, apellido1, apellido2, edad, telefono, telefonoemergencia, genero, fecha_nacimiento, curp, domicilio, comunidad, municipio, correo, institucion, domicilioins, municipioins, estadoins, ciclo, matricula, disciplinains, fechaingreso) VALUES ('$destino', '$nombre', '$apellido1', '$apellido2', '$edad', '$telefono', '$telefonoemergencia', '$genero', '$fecha_nacimiento', '$curp', '$domicilio', '$comunidad', '$municipio', '$email', '$institucion', '$domicilioins', '$municipioins', '$estadoins', '$ciclo', '$matricula', '$disciplina', '$fechaingreso') ";
 
 $query = mysqli_query($conn, $insertar);
 if($query){
