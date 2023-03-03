@@ -156,7 +156,7 @@ if (!isset($user)) {
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-12">
-                    <h3 class="text-muted m-4 p-4">Lista de Alumnos</h3>
+                    <h3 class="text-muted p-4">Lista de Alumnos</h3>
                     <div class="table-responsive">
                         <table class="table table-striped data-table" style="width: 100%;">
                             <thead class="text-center">
