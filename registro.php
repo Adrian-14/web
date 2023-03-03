@@ -170,11 +170,13 @@ if (!isset($user)) {
                                     <h2 class="display-6">Datos del Estudiante</h2>
                                     <div class="col-md-12">
                                         <label for="formFile" class="form-label">Foto</label>
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-12 col-md-6">
                                             <input type="file" class="form-control" id="foto" name="foto" multiple>
                                         </div>
                                     </div>
-                                    <br>
+                                </div>
+                                <br>
+                                <div class="row">
                                     <div class="col-md-3">
                                         <label for="formFile" class="form-label">Nombre</label>
                                         <input type="text" name="nombre" class="form-control" placeholder="Nombre(s)" aria-label="nombre">
@@ -196,7 +198,7 @@ if (!isset($user)) {
                                 <div class="row">
                                     <div class="col-md-3">
                                         <label for="formFile" class="form-label">Edad</label>
-                                        <input type="text" name="edad" class="form-control" placeholder="Segundo Apellido" aria-label="2doapellido">
+                                        <input type="text" name="edad" class="form-control" aria-label="2doapellido">
                                     </div>
                                     <div class="col-md-3">
                                         <label for="don" class="form-label">Domicilio</label>
@@ -263,19 +265,15 @@ if (!isset($user)) {
                                         <label for="inputState" class="form-label">Teller Externo</label>
                                         <select id="inputState" name="tallerexterno" class="form-select">
                                             <option selected value="none">Selecciona...</option>
-                                            <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
-                                            <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
-                                            <option value="Ajedrez">Ajedrez</option>
-                                            <option value="Lengua Otomi">Lengua Otomi</option>
-                                            <option value="Banda de Viento">Banda de Viento</option>
-                                            <option value="Violin">Violin</option>
-                                            <option value="Guitarra">Guitarra</option>
-                                            <option value="Dibujo Artistico">Dibujo Artistico</option>
-                                            <option value="Pintura en Tela">Pintura en Tela</option>
-                                            <option value="Club de Tareas">Club de Tareas</option>
-                                            <option value="Computacion Basico">Computacion Basico</option>
-                                            <option value="Hora de cuento">Hora de cuento</option>
-                                            <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
+                                            <option value="Baby Ballet">Baby Ballet</option>
+                                            <option value="Ballet Infantil">Ballet Infantil</option>
+                                            <option value="Ballet Clasico">Ballet Clasico</option>
+                                            <option value="Lengua de Señas Mexicanas">Lengua de Señas Mexicanas</option>
+                                            <option value="Fotografia Semilleros Creativos">Fotografia Semilleros Creativos</option>
+                                            <option value="Piano">Piano</option>
+                                            <option value="Recreación Inicial">Recreación Inicial</option>
+                                            <option value="Textil">Textil Basico de encuadernacion</option>
+                                            <option value="Tela de Marco">Tela de Marco Arte Textil</option>
                                         </select>
                                     </div>
                                     <div class="col-md-3">
@@ -287,7 +285,7 @@ if (!isset($user)) {
                                 <br>
                                 <div class="col text-end">
                                     <button class="btn btn-success" type="submit">Aceptar</button>
-                                    <button class="btn btn-danger" type="submit">Cancelar</button>
+                                    <button class="btn btn-danger" type="submit"><a href="registro.php"></a>Cancelar</button>
                                 </div>
                             </form>
                         </div>
