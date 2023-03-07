@@ -217,6 +217,11 @@ if (!isset($user)) {
           <div class="card border-0 shadow">
             <div class="card-body">
               <h4 class="text-muted">Comunidades</h4>
+
+              <?php
+                require 'conn.php';
+                $query = $con->query("SELECT ")
+              ?>
               <div>
                 <canvas id="myChart"></canvas>
               </div>
