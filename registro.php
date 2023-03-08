@@ -228,8 +228,13 @@ if (!isset($user)) {
                                         </select>
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="curp" class="form-label">Grado de Estudios</label>
-                                        <input type="text" name="Grado" class="form-control" aria-label="curp">
+                                        <label for="inputState" class="form-label">Grado de Estudios</label>
+                                        <select id="inputState" name="grado" class="form-select">
+                                            <option selected>Seleccione...</option>
+                                            <option value="Primaria">Primaria</option>
+                                            <option value="Secundaria">Secundaria</option>
+                                            <option value="Preparatoria">Preparatoria</option>
+                                        </select>
                                     </div>
                                     <div class="col-md-3">
                                         <label for="comu" class="form-label">Localidad</label>
