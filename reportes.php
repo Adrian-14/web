@@ -164,10 +164,84 @@ if (!isset($user)) {
                     <div class="row">
                         <div class="col-3">
                             <div class="card shadow border-0">
-                                <div class="card-body">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Artes Platicas Juvenil</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/artes-juvenil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Artes Platicas Infantil</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/artes-infantil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
                                     <h5 class="card-title">Ajedrez</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Lista de Alumnos</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/ajedrez.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Lengua Otomi</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/otomi.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Artes Platicas Juvenil</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/artes-juvenil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Artes Platicas Infantil</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/artes-infantil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Ajedrez</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/ajedrez.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Lengua Otomi</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/otomi.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
