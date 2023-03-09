@@ -146,7 +146,7 @@ if (!isset($user)) {
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="reportes.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
                             <span>Reportes</span>
                         </a>
@@ -220,7 +220,7 @@ if (!isset($user)) {
                     <div class="row">
                         <div class="col">
                             <div class="table-responsive">
-                                <table class="table table-striped data-table" style="width: 100%";>
+                                <table class="table table-striped data-table" style="width: 100%" ;>
                                     <thead class="text-center">
                                         <tr>
                                             <th scope="col">N°</th>
@@ -253,23 +253,24 @@ if (!isset($user)) {
                                                                             <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Datos</h1>
                                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
+
                                                                         <div class="modal-body">
-                                                                            <form action="update.php" method="POST" enctype="multipart/form-data">
+                                                                            <form action="#" method="POST" enctype="multipart/form-data">
                                                                                 <div class="mb-3 text-start">
-                                                                                    <label for="name" class="col-form-label">Nombre</label>
+                                                                                    <label for="name" class="col-form-label text-muted">Nombre</label>
                                                                                     <input type="text" class="form-control" name="nombreedi" id="name">
                                                                                 </div>
                                                                                 <div class="mb-3 text-start">
-                                                                                    <label for="message-text" class="col-form-label">Primer Apellido</label>
+                                                                                    <label for="message-text" class="col-form-label text-muted">Primer Apellido</label>
                                                                                     <input type="text" class="form-control" name="apellido1edi">
                                                                                 </div>
                                                                                 <div class="mb-3 text-start">
-                                                                                    <label for="message-text" class="col-form-label">Segundo Apellido</label>
+                                                                                    <label for="message-text" class="col-form-label text-muted">Segundo Apellido</label>
                                                                                     <input type="text" class="form-control" name="apellido2edi">
                                                                                 </div>
                                                                                 <div class="row">
                                                                                     <div class="col">
-                                                                                        <label for="inputState" class="form-label">Teller Libre</label>
+                                                                                        <label for="inputState" class="form-label text-muted">Teller Libre</label>
                                                                                         <select id="inputState" name="disciplinains" class="form-select">
                                                                                             <option selected value="none">Selecciona...</option>
                                                                                             <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
@@ -288,7 +289,7 @@ if (!isset($user)) {
                                                                                         </select>
                                                                                     </div>
                                                                                     <div class="col">
-                                                                                        <label for="inputState" class="form-label">Teller Externo</label>
+                                                                                        <label for="inputState" class="form-label text-muted">Teller Externo</label>
                                                                                         <select id="inputState" name="tallerexterno" class="form-select">
                                                                                             <option selected value="none">Selecciona...</option>
                                                                                             <option value="Baby Ballet">Baby Ballet</option>
@@ -307,7 +308,7 @@ if (!isset($user)) {
                                                                         </div>
                                                                         <div class="modal-footer mx-auto">
                                                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                                                            <button type="button" class="btn btn-success" value="submit">Actualizar</button>
+                                                                            <button type="button" name="enviar" class="btn btn-success" value="submit">Actualizar</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>

@@ -35,7 +35,7 @@ if (!isset($user)) {
             <div class="collapse navbar-collapse" id="topNavBar">
                 <form class="d-flex ms-auto my-3 my-lg-0">
                     <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search" />
                         <button class="btn btn-primary" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
@@ -147,7 +147,7 @@ if (!isset($user)) {
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="reportes.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
                             <span>Reportes</span>
                         </a>

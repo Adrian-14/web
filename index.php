@@ -148,7 +148,7 @@ if (!isset($user)) {
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link px-3">
+            <a href="reportes.php" class="nav-link px-3">
               <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
               <span>Reportes</span>
             </a>
@@ -170,7 +170,7 @@ if (!isset($user)) {
                   <div class="text-center">
                     <h5 class="fw-normal mt-0 text-muted">Alumnos</h5>
                     <h3 class="mt-3 mb-3 text-center">
-                      <span class="mb-0">3</span>
+                      <span class="mb-0">0</span>
                     </h3>
                     <p class="text-muted">Cursando</p>
                   </div>
@@ -183,7 +183,7 @@ if (!isset($user)) {
                   <div class="text-center">
                     <h5 class="fw-normal mt-0 text-muted">Maestros</h5>
                     <h3 class="mt-3 mb-3 text-center">
-                      <span class="mb-0">2</span>
+                      <span class="mb-0">0</span>
                     </h3>
                     <p class="text-muted">Dando Clase</p>
                   </div>
@@ -198,7 +198,7 @@ if (!isset($user)) {
                   <div class="text-center">
                     <h5 class="fw-normal mt-0 text-muted">Talleres</h5>
                     <h3 class="mt-3 mb-3 text-center">
-                      <span class="mb-0">2</span>
+                      <span class="mb-0">0</span>
                     </h3>
                     <p class="text-muted">Activos</p>
                   </div>
@@ -211,7 +211,7 @@ if (!isset($user)) {
                   <div class="text-center">
                     <h5 class="fw-normal mt-0 text-muted">Comunidades</h5>
                     <h3 class="mt-3 mb-3 text-center">
-                      <span class="mb-0">2</span>
+                      <span class="mb-0">0</span>
                     </h3>
                     <p class="text-muted">En Total</p>
                   </div>
@@ -240,7 +240,7 @@ if (!isset($user)) {
                     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                     datasets: [{
                       label: 'Alumnos',
-                      data: [12, 19, 3, 5, 2, 3],
+                      data: [0, 0, 0, 0, 0, 0],
                       borderWidth: 1
                     }]
                   },
@@ -266,7 +266,7 @@ if (!isset($user)) {
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-striped data-table" style="width: 100%;">
+                <table class="table table-striped hover data-table" style="width: 100%;">
                   <thead class="text-center">
                     <tr>
                       <th scope="col">N°</th>
