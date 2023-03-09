@@ -249,7 +249,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Teller Libre</label>
-                                        <select id="inputState" name="disciplinains" class="form-select">
+                                        <select id="inputState" name="tallerlibre" class="form-select">
                                             <option selected value="none">Selecciona...</option>
                                             <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
                                             <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
