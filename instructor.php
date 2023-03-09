@@ -218,126 +218,131 @@ if (!isset($user)) {
                 </div>
                 <div class="container pt-5">
                     <div class="row">
-                        <table class="table table-striped table-sm align-middle table-edge table-nowrap mb-0">
-                            <thead class="text-center">
-                                <tr>
-                                    <th scope="col">N°</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Primer Apellido</th>
-                                    <th scope="col">Segundo Apellido</th>
-                                    <th scope="col">Diciplina</th>
-                                    <th scope="col">Accion</th>
-                                </tr>
-                            </thead>
-                            <tbody id="datos">
+                        <div class="col">
+                            <div class="table-responsive">
+                                <table class="table table-striped data-table" style="width: 100%";>
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th scope="col">N°</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Apellido(1)</th>
+                                            <th scope="col">Apellido(2)</th>
+                                            <th scope="col">Taller Libre</th>
+                                            <th scope="col">Taller Externo</th>
+                                            <th scope="col">Acción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="datos">
+                                        <?php
+                                        foreach ($query as $row) { ?>
+                                            <tr class="text-center">
+                                                <th scope="row"><?php echo $row['id']; ?></th>
+                                                <td><?php echo $row['nombre']; ?></td>
+                                                <td><?php echo $row['apellido1']; ?></td>
+                                                <td><?php echo $row['apellido2']; ?></td>
+                                                <td><?php echo $row['tallerlibreM']; ?></td>
+                                                <td><?php echo $row['tallerexternoM']; ?></td>
+                                                <td>
+                                                    <div class="row d-flex align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-pencil-square"></i></button>
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Datos</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <form>
+                                                                                <div class="mb-3 text-start">
+                                                                                    <label for="name" class="col-form-label">Nombre</label>
+                                                                                    <input type="text" class="form-control" name="nombreedi" id="name">
+                                                                                </div>
+                                                                                <div class="mb-3 text-start">
+                                                                                    <label for="message-text" class="col-form-label">Primer Apellido</label>
+                                                                                    <input type="text" class="form-control" name="apellido1edi">
+                                                                                </div>
+                                                                                <div class="mb-3 text-start">
+                                                                                    <label for="message-text" class="col-form-label">Segundo Apellido</label>
+                                                                                    <input type="text" class="form-control" name="apellido2edi">
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col">
+                                                                                        <label for="inputState" class="form-label">Teller Libre</label>
+                                                                                        <select id="inputState" name="disciplinains" class="form-select">
+                                                                                            <option selected value="none">Selecciona...</option>
+                                                                                            <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
+                                                                                            <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
+                                                                                            <option value="Ajedrez">Ajedrez</option>
+                                                                                            <option value="Lengua Otomi">Lengua Otomi</option>
+                                                                                            <option value="Banda de Viento">Banda de Viento</option>
+                                                                                            <option value="Violin">Violin</option>
+                                                                                            <option value="Guitarra">Guitarra</option>
+                                                                                            <option value="Dibujo Artistico">Dibujo Artistico</option>
+                                                                                            <option value="Pintura en Tela">Pintura en Tela</option>
+                                                                                            <option value="Club de Tareas">Club de Tareas</option>
+                                                                                            <option value="Computacion Basico">Computacion Basico</option>
+                                                                                            <option value="Hora de cuento">Hora de cuento</option>
+                                                                                            <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="col">
+                                                                                        <label for="inputState" class="form-label">Teller Externo</label>
+                                                                                        <select id="inputState" name="tallerexterno" class="form-select">
+                                                                                            <option selected value="none">Selecciona...</option>
+                                                                                            <option value="Baby Ballet">Baby Ballet</option>
+                                                                                            <option value="Ballet Infantil">Ballet Infantil</option>
+                                                                                            <option value="Ballet Clasico">Ballet Clasico</option>
+                                                                                            <option value="Lengua de Señas Mexicanas">Lengua de Señas Mexicanas</option>
+                                                                                            <option value="Fotografia Semilleros Creativos">Fotografia Semilleros Creativos</option>
+                                                                                            <option value="Piano">Piano</option>
+                                                                                            <option value="Recreación Inicial">Recreación Inicial</option>
+                                                                                            <option value="Textil">Textil Basico de encuadernacion</option>
+                                                                                            <option value="Tela de Marco">Tela de Marco Arte Textil</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="modal-footer mx-auto">
+                                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                                                            <button type="button" class="btn btn-success">Actualizar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModa2" data-bs-whatever="@getbootstrap"><i class="bi bi-trash"></i></button>
+                                                            <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h1 class="modal-title fs-5" id="exampleModalLabe2">Eliminar Dato</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-center">
+                                                                            <h4>¡ Seguro que quieres <span class="text-danger">ELIMINAR</span>!</h4>
+                                                                        </div>
+                                                                        <div class="modal-footer mx-auto">
+                                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                                                            <button type="button" class="btn btn-success">Aceptar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
                                 <?php
-                                foreach ($query as $row) { ?>
-                                    <tr class="text-center">
-                                        <th scope="row"><?php echo $row['id']; ?></th>
-                                        <td><?php echo $row['nombre']; ?></td>
-                                        <td><?php echo $row['apellido1']; ?></td>
-                                        <td><?php echo $row['apellido2']; ?></td>
-                                        <td><?php echo $row['disciplina']; ?></td>
-                                        <td>
-                                            <div class="row d-flex align-items-center justify-content-center">
-                                                <div class="col-auto">
-                                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-pencil-square"></i></button>
-                                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Datos</h1>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    <form>
-                                                                        <div class="mb-3 text-start">
-                                                                            <label for="name" class="col-form-label">Nombre</label>
-                                                                            <input type="text" class="form-control" name="nombreedi" id="name">
-                                                                        </div>
-                                                                        <div class="mb-3 text-start">
-                                                                            <label for="message-text" class="col-form-label">Primer Apellido</label>
-                                                                            <input type="text" class="form-control" name="apellido1edi">
-                                                                        </div>
-                                                                        <div class="mb-3 text-start">
-                                                                            <label for="message-text" class="col-form-label">Segundo Apellido</label>
-                                                                            <input type="text" class="form-control" name="apellido2edi">
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col">
-                                                                                <label for="inputState" class="form-label">Teller Libre</label>
-                                                                                <select id="inputState" name="disciplinains" class="form-select">
-                                                                                    <option selected value="none">Selecciona...</option>
-                                                                                    <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
-                                                                                    <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
-                                                                                    <option value="Ajedrez">Ajedrez</option>
-                                                                                    <option value="Lengua Otomi">Lengua Otomi</option>
-                                                                                    <option value="Banda de Viento">Banda de Viento</option>
-                                                                                    <option value="Violin">Violin</option>
-                                                                                    <option value="Guitarra">Guitarra</option>
-                                                                                    <option value="Dibujo Artistico">Dibujo Artistico</option>
-                                                                                    <option value="Pintura en Tela">Pintura en Tela</option>
-                                                                                    <option value="Club de Tareas">Club de Tareas</option>
-                                                                                    <option value="Computacion Basico">Computacion Basico</option>
-                                                                                    <option value="Hora de cuento">Hora de cuento</option>
-                                                                                    <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="col">
-                                                                                <label for="inputState" class="form-label">Teller Externo</label>
-                                                                                <select id="inputState" name="tallerexterno" class="form-select">
-                                                                                    <option selected value="none">Selecciona...</option>
-                                                                                    <option value="Baby Ballet">Baby Ballet</option>
-                                                                                    <option value="Ballet Infantil">Ballet Infantil</option>
-                                                                                    <option value="Ballet Clasico">Ballet Clasico</option>
-                                                                                    <option value="Lengua de Señas Mexicanas">Lengua de Señas Mexicanas</option>
-                                                                                    <option value="Fotografia Semilleros Creativos">Fotografia Semilleros Creativos</option>
-                                                                                    <option value="Piano">Piano</option>
-                                                                                    <option value="Recreación Inicial">Recreación Inicial</option>
-                                                                                    <option value="Textil">Textil Basico de encuadernacion</option>
-                                                                                    <option value="Tela de Marco">Tela de Marco Arte Textil</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                                <div class="modal-footer mx-auto">
-                                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                                                    <button type="button" class="btn btn-success">Actualizar</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-auto">
-                                                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModa2" data-bs-whatever="@getbootstrap"><i class="bi bi-trash"></i></button>
-                                                    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabe2">Eliminar Dato</h1>
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <div class="modal-body text-center">
-                                                                    <h4>¡ Seguro que quieres <span class="text-danger">ELIMINAR</span>!</h4>
-                                                                </div>
-                                                                <div class="modal-footer mx-auto">
-                                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                                                    <button type="button" class="btn btn-success">Aceptar</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                            </tbody>
-                        <?php
-                                }
-                        ?>
-                        </table>
+                                        }
+                                ?>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -345,8 +350,12 @@ if (!isset($user)) {
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
