@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-02-2023 a las 22:23:26
+-- Tiempo de generación: 09-03-2023 a las 18:37:11
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.0.25
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alumnos`
+--
+
+CREATE TABLE `alumnos` (
+  `id` int(11) NOT NULL,
+  `foto` longblob NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido1` varchar(100) NOT NULL,
+  `apellido2` varchar(100) NOT NULL,
+  `fecha_nacimiento` date NOT NULL,
+  `edad` varchar(10) NOT NULL,
+  `domicilio` varchar(100) NOT NULL,
+  `correo` varchar(18) NOT NULL,
+  `telefono` varchar(10) NOT NULL,
+  `telefono_emergencia` varchar(10) NOT NULL,
+  `genero` varchar(200) NOT NULL,
+  `grado` varchar(200) NOT NULL,
+  `localidad` varchar(200) NOT NULL,
+  `municipio` varchar(200) NOT NULL,
+  `taller_libre` varchar(200) NOT NULL,
+  `taller_externo` varchar(200) NOT NULL,
+  `fecha_ingreso` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -62,49 +89,18 @@ CREATE TABLE `maestros` (
 INSERT INTO `maestros` (`id`, `nombre`, `apellido1`, `apellido2`, `disciplina`) VALUES
 (1, 'cesar', 'diaz', 'resendiz', 'Musica'),
 (2, 'Ricardo', 'Nieto', 'Garcia', 'Danza'),
-(3, 'Vicente', 'Hernandez', 'Escamilla', 'Musica');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `registro`
---
-
-CREATE TABLE `registro` (
-  `id` int(11) NOT NULL,
-  `foto` longblob NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `apellido1` varchar(100) NOT NULL,
-  `apellido2` varchar(100) NOT NULL,
-  `edad` varchar(100) NOT NULL,
-  `nacionalidad` varchar(100) NOT NULL,
-  `genero` varchar(100) NOT NULL,
-  `fecha_nacimiento` date NOT NULL,
-  `curp` varchar(18) NOT NULL,
-  `domicilio` varchar(100) NOT NULL,
-  `comunidad` varchar(100) NOT NULL,
-  `municipio` varchar(100) NOT NULL,
-  `correo` varchar(200) NOT NULL,
-  `institucion` varchar(200) NOT NULL,
-  `domicilioins` varchar(200) NOT NULL,
-  `municipioins` varchar(200) NOT NULL,
-  `estadoins` varchar(200) NOT NULL,
-  `ciclo` varchar(200) NOT NULL,
-  `matricula` varchar(200) NOT NULL,
-  `disciplinains` varchar(200) NOT NULL,
-  `fechaingreso` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Volcado de datos para la tabla `registro`
---
-
-INSERT INTO `registro` (`id`, `foto`, `nombre`, `apellido1`, `apellido2`, `edad`, `nacionalidad`, `genero`, `fecha_nacimiento`, `curp`, `domicilio`, `comunidad`, `municipio`, `correo`, `institucion`, `domicilioins`, `municipioins`, `estadoins`, `ciclo`, `matricula`, `disciplinains`, `fechaingreso`) VALUES
-(10, 0x666f746f732f666f746f322e6a7067, 'Alexa', 'Hernandez', 'Matias', '17', 'mexicana', 'extranjera', '1995-12-27', 'ALH951227MQTRTS09', 'calle #12 Colonia Centro', 'PathÃ©', 'Cadereyta', '', '', '', '', '', '', '', '', '');
+(3, 'Vicente', 'Hernandez', 'Escamilla', 'Musica'),
+(4, 'Luis', 'Angeles', 'Estrella', 'Musica');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `alumnos`
+--
+ALTER TABLE `alumnos`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `login`
@@ -119,14 +115,14 @@ ALTER TABLE `maestros`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `registro`
---
-ALTER TABLE `registro`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `alumnos`
+--
+ALTER TABLE `alumnos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `login`
@@ -138,13 +134,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT de la tabla `maestros`
 --
 ALTER TABLE `maestros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `registro`
---
-ALTER TABLE `registro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
