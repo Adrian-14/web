@@ -263,15 +263,41 @@ if (!isset($user)) {
                                                                             <label for="message-text" class="col-form-label">Segundo Apellido</label>
                                                                             <input type="text" class="form-control" name="apellido2edi">
                                                                         </div>
-                                                                        <div class="col-md-3 text-start">
-                                                                            <label for="inputState" class="form-label">Disiplina</label>
-                                                                            <select id="inputState" name="disciplinaedi" class="form-select">
-                                                                                <option selected>Selecciona...</option>
-                                                                                <option value="Danza">Danza</option>
-                                                                                <option value="Teatro">Teatro</option>
-                                                                                <option value="Musica">Musica</option>
-                                                                                <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
-                                                                            </select>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="inputState" class="form-label">Teller Libre</label>
+                                                                                <select id="inputState" name="disciplinains" class="form-select">
+                                                                                    <option selected value="none">Selecciona...</option>
+                                                                                    <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
+                                                                                    <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
+                                                                                    <option value="Ajedrez">Ajedrez</option>
+                                                                                    <option value="Lengua Otomi">Lengua Otomi</option>
+                                                                                    <option value="Banda de Viento">Banda de Viento</option>
+                                                                                    <option value="Violin">Violin</option>
+                                                                                    <option value="Guitarra">Guitarra</option>
+                                                                                    <option value="Dibujo Artistico">Dibujo Artistico</option>
+                                                                                    <option value="Pintura en Tela">Pintura en Tela</option>
+                                                                                    <option value="Club de Tareas">Club de Tareas</option>
+                                                                                    <option value="Computacion Basico">Computacion Basico</option>
+                                                                                    <option value="Hora de cuento">Hora de cuento</option>
+                                                                                    <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="inputState" class="form-label">Teller Externo</label>
+                                                                                <select id="inputState" name="tallerexterno" class="form-select">
+                                                                                    <option selected value="none">Selecciona...</option>
+                                                                                    <option value="Baby Ballet">Baby Ballet</option>
+                                                                                    <option value="Ballet Infantil">Ballet Infantil</option>
+                                                                                    <option value="Ballet Clasico">Ballet Clasico</option>
+                                                                                    <option value="Lengua de Señas Mexicanas">Lengua de Señas Mexicanas</option>
+                                                                                    <option value="Fotografia Semilleros Creativos">Fotografia Semilleros Creativos</option>
+                                                                                    <option value="Piano">Piano</option>
+                                                                                    <option value="Recreación Inicial">Recreación Inicial</option>
+                                                                                    <option value="Textil">Textil Basico de encuadernacion</option>
+                                                                                    <option value="Tela de Marco">Tela de Marco Arte Textil</option>
+                                                                                </select>
+                                                                            </div>
                                                                         </div>
                                                                     </form>
                                                                 </div>
