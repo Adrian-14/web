@@ -147,6 +147,12 @@ if (!isset($user)) {
               <span>Instructores</span>
             </a>
           </li>
+          <li>
+            <a href="#" class="nav-link px-3">
+              <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
+              <span>Reportes</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
