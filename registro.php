@@ -52,7 +52,7 @@ if (!isset($user)) {
                                 <a class="dropdown-item" href="#"><i class="bi bi-gear-fill me-1"></i>Ajustes</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-danger" href="#"><i class="bi bi-power me-1"></i>Cerrar Sesion</a>
+                                <a class="dropdown-item text-danger" href="cerrar_sesion.php"><i class="bi bi-power me-1"></i>Cerrar Sesion</a>
                             </li>
                         </ul>
                     </li>
@@ -143,6 +143,12 @@ if (!isset($user)) {
                             <span>Instructores</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -167,7 +173,7 @@ if (!isset($user)) {
                         <div class="row">
                             <form action="alta.php" method="POST" enctype="multipart/form-data">
                                 <div class="row">
-                                    <h2 class="display-6">Datos del Alumno</h2>
+                                    <h3 class="text-muted">Datos del Alumno</h3>
                                     <div class="col-md-12">
                                         <label for="formFile" class="form-label">Foto</label>
                                         <div class="col-sm-12 col-md-6">

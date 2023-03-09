@@ -145,6 +145,12 @@ if (!isset($user)) {
                             <span>Instructores</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -157,29 +163,54 @@ if (!isset($user)) {
                 <div class="container">
                     <div class="row d-flex align-items-center justify-content-center">
                         <form class="row g-3" action="altaM.php" method="POST" enctype="multipart/form-data">
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="validationDefault03" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" name="nombre" id="validationDefault03" required>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="validationDefault03" class="form-label">Primer Apellido</label>
                                 <input type="text" class="form-control" name="apellido1" id="validationDefault03" required>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="validationDefault03" class="form-label">Segundo Apellido</label>
                                 <input type="text" class="form-control" name="apellido2" id="validationDefault03" required>
                             </div>
-                            <div class="col-md-3">
-                                <label for="inputState" class="form-label">Disiplina</label>
-                                <select id="inputState" name="disciplina" class="form-select">
-                                    <option selected>Selecciona...</option>
-                                    <option value="Danza">Danza</option>
-                                    <option value="Teatro">Teatro</option>
-                                    <option value="Musica">Musica</option>
-                                    <option value="Artes plasticas y visuales">Artes plasticas y visuales</option>
+                            <div class="col-md-2">
+                                <label for="inputState" class="form-label">Teller Libre</label>
+                                <select id="inputState" name="tallerlibreM" class="form-select">
+                                    <option selected value="none">Selecciona...</option>
+                                    <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
+                                    <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
+                                    <option value="Ajedrez">Ajedrez</option>
+                                    <option value="Ajedrez Comunidad">Ajedrez en Comunidad</option>
+                                    <option value="Lengua Otomi">Lengua Otomi</option>
+                                    <option value="Banda de Viento">Banda de Viento</option>
+                                    <option value="Violin">Violin</option>
+                                    <option value="Guitarra">Guitarra</option>
+                                    <option value="Dibujo Artistico">Dibujo Artistico</option>
+                                    <option value="Pintura en Tela">Pintura en Tela</option>
+                                    <option value="Club de Tareas">Club de Tareas</option>
+                                    <option value="Computacion Basico">Computacion Basico</option>
+                                    <option value="Hora de cuento">Hora de cuento</option>
+                                    <option value="Circulos de lectura">Circulos de lectura para Jovenes</option>
                                 </select>
                             </div>
-                            <div class="col-auto d-flex align-items-center">
+                            <div class="col-md-2">
+                                <label for="inputState" class="form-label">Teller Externo</label>
+                                <select id="inputState" name="tallerexternoM" class="form-select">
+                                    <option selected value="none">Selecciona...</option>
+                                    <option value="Baby Ballet">Baby Ballet</option>
+                                    <option value="Ballet Infantil">Ballet Infantil</option>
+                                    <option value="Ballet Clasico">Ballet Clasico</option>
+                                    <option value="Lengua de Señas Mexicanas">Lengua de Señas Mexicanas</option>
+                                    <option value="Fotografia Semilleros Creativos">Fotografia Semilleros Creativos</option>
+                                    <option value="Piano">Piano</option>
+                                    <option value="Recreación Inicial">Recreación Inicial</option>
+                                    <option value="Textil">Textil Basico de encuadernacion</option>
+                                    <option value="Tela de Marco">Tela de Marco Arte Textil</option>
+                                </select>
+                            </div>
+                            <div class="col-auto d-flex align-items-end">
                                 <button class="btn btn-primary" type="submit">Agregar</button>
                             </div>
                         </form>
