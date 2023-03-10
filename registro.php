@@ -256,7 +256,7 @@ if (!isset($user)) {
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Teller Libre</label>
                                         <select id="inputState" name="taller_libre" class="form-select">
-                                            <option selected value="none">Selecciona...</option>
+                                            <option selected value="0">Selecciona...</option>
                                             <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
                                             <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
                                             <option value="Ajedrez">Ajedrez</option>
@@ -276,7 +276,7 @@ if (!isset($user)) {
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Teller Externo</label>
                                         <select id="inputState" name="taller_externo" class="form-select">
-                                            <option selected value="none">Selecciona...</option>
+                                            <option selected value="0">Selecciona...</option>
                                             <option value="Baby Ballet">Baby Ballet</option>
                                             <option value="Ballet Infantil">Ballet Infantil</option>
                                             <option value="Ballet Clasico">Ballet Clasico</option>
