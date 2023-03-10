@@ -197,7 +197,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="fecha" class="form-label">Fecha de Nacimiento</label>
-                                        <input type="date" name="fecha_naci" class="form-control" aria-label="fecha">
+                                        <input type="date" name="fecha_nacimiento" class="form-control" aria-label="fecha">
                                     </div>
                                 </div>
                                 <br>
@@ -223,7 +223,7 @@ if (!isset($user)) {
                                 <div class="row">
                                     <div class="col-md-3">
                                         <label for="correo" class="form-label">Telefono de Emergencia</label>
-                                        <input type="num" name="telefonoemergencia" class="form-control" aria-label="curp">
+                                        <input type="num" name="telefono_emergencia" class="form-control" aria-label="curp">
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Genero</label>
@@ -255,7 +255,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Teller Libre</label>
-                                        <select id="inputState" name="tallerlibre" class="form-select">
+                                        <select id="inputState" name="taller_libre" class="form-select">
                                             <option selected value="none">Selecciona...</option>
                                             <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
                                             <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
@@ -275,7 +275,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="inputState" class="form-label">Teller Externo</label>
-                                        <select id="inputState" name="tallerexterno" class="form-select">
+                                        <select id="inputState" name="taller_externo" class="form-select">
                                             <option selected value="none">Selecciona...</option>
                                             <option value="Baby Ballet">Baby Ballet</option>
                                             <option value="Ballet Infantil">Ballet Infantil</option>
@@ -290,7 +290,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="col-md-3">
                                         <label for="mun" class="form-label">Fecha de Ingreso</label>
-                                        <input type="date" name="fechaingreso" class="form-control" aria-label="curp">
+                                        <input type="date" name="fecha_ingreso" class="form-control" aria-label="curp">
                                     </div>
                                 </div>
                                 <br>
