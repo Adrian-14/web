@@ -319,6 +319,16 @@ if (!isset($user)) {
                                 </div>
                             </div>
                         </div>
+                        <div class="col-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Ajedrez Comunidades</h5>
+                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                    <img src="assets/ajedrezcomunidad.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -333,9 +343,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Artes Platicas Juvenil</h5>
+                                    <h5 class="card-title">Baby Ballet</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/artes-juvenil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/baby-ballet.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -343,9 +353,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Artes Platicas Infantil</h5>
+                                    <h5 class="card-title">Ballet Infantil</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/artes-infantil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/ballet-infantil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -353,9 +363,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Ajedrez</h5>
+                                    <h5 class="card-title">Ballet Clasico</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/ajedrez.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/ballet-juvenil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -363,9 +373,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Lengua Otomi</h5>
+                                    <h5 class="card-title">Lengua de Señas</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/otomi.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/seña.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -377,9 +387,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Danza Folklorica</h5>
+                                    <h5 class="card-title">Fotografia Semilleros Creativos</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/danza.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/camara.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -387,9 +397,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Banda de Viento</h5>
+                                    <h5 class="card-title">Piano</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/banda.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/piano.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -397,9 +407,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Guitarra</h5>
+                                    <h5 class="card-title">Recreacion Inicial</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/guitarra.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/bebe.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -407,9 +417,9 @@ if (!isset($user)) {
                         <div class="col-3">
                             <div class="card shadow border-0">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Violin</h5>
+                                    <h5 class="card-title">Textil de encuadernacion</h5>
                                     <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/violin.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                    <img src="assets/textil.png" class="img-fluid m-3" alt="ajedrez" width="100px">
                                     <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                                 </div>
                             </div>
@@ -417,76 +427,15 @@ if (!isset($user)) {
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card shadow border-0">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Dibujo Artistico</h5>
-                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/dibujo.png" class="img-fluid m-3" alt="ajedrez" width="100px">
-                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
-                                </div>
+                    <div class="col-3">
+                        <div class="card shadow border-0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Telar de Marco</h5>
+                                <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
+                                <img src="assets/telar.png" class="img-fluid m-3" alt="ajedrez" width="100px">
+                                <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card shadow border-0">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Pintura en Tela</h5>
-                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/tela.png" class="img-fluid m-3" alt="ajedrez" width="100px">
-                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card shadow border-0">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Club de Tareas</h5>
-                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/tareas.png" class="img-fluid m-3" alt="ajedrez" width="100px">
-                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card shadow border-0">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Computación</h5>
-                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/computacion.png" class="img-fluid m-3" alt="ajedrez" width="100px">
-                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card shadow border-0">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Hora de Cuento para niñas y niños</h5>
-                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/cuento.png" class="img-fluid m-3" alt="ajedrez" width="100px">
-                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card shadow border-0">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Lectura para Jovenes "Amor a la Literatura"</h5>
-                                    <h6 class="card-subtitle text-muted">Lista de Alumnos</h6>
-                                    <img src="assets/lectura.png" class="img-fluid m-3" alt="ajedrez" width="100px">
-                                    <button href="#" class="btn btn-primary card-link ">Descargar <i class="bi bi-cloud-arrow-down-fill"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col m-3">
-                        <p class="lead text-muted">Talleres Externos</p>
                     </div>
                 </div>
             </div>
