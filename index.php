@@ -96,7 +96,7 @@ if (!isset($user)) {
               <span class="me-2"><i class="bi bi-database-fill"></i></span>
               <span>Más</span>
               <span class="ms-auto">
-                <span class="right-icon">
+                <span class="me-2">
                   <i class="bi bi-chevron-down"></i>
                 </span>
               </span>
