@@ -69,6 +69,9 @@ if (!isset($user)) {
     <div class="offcanvas-body p-0">
       <nav class="navbar-dark">
         <ul class="navbar-nav">
+          <li class="my-4">
+            <hr class="dropdown-divider bg-light" />
+          </li>
           <li>
             <div class="text-muted small fw-bold text-uppercase px-3">
               Menu
@@ -91,7 +94,7 @@ if (!isset($user)) {
           <li>
             <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts">
               <span class="me-2"><i class="bi bi-database-fill"></i></span>
-              <span>Datos</span>
+              <span>Más</span>
               <span class="ms-auto">
                 <span class="right-icon">
                   <i class="bi bi-chevron-down"></i>
