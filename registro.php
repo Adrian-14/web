@@ -144,7 +144,7 @@ if (!isset($user)) {
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="reportes.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-clipboard2-fill"></i></span>
                             <span>Reportes</span>
                         </a>
@@ -177,7 +177,7 @@ if (!isset($user)) {
                                     <div class="col-md-12">
                                         <label for="formFile" class="form-label">Foto</label>
                                         <div class="col-sm-12 col-md-6">
-                                            <input type="file" class="form-control" id="foto" name="foto" multiple>
+                                            <input type="file" class="form-control" name="foto" required>
                                         </div>
                                     </div>
                                 </div>
