@@ -308,7 +308,14 @@ if (!isset($user)) {
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                      <form>
+                                      <form action="alta.php" method="POST">
+                                        <?php
+                                        $id = $_REQUEST['id'];
+                                        include 'conn.php';
+                                        $query = "SELECT * FROM alumnos WHERE id='$id'";
+                                        $resultado = $conn->query($query);
+                                        $row = $resultado->fetch_assoc();
+                                        ?>
                                         <div class="mb-3 text-start">
                                           <label for="name" class="col-form-label">Nombre</label>
                                           <input type="text" class="form-control" name="nombreedi" id="name">
@@ -382,7 +389,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="modal-footer mx-auto">
                                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                      <button type="button" class="btn btn-success"><a href="eliminar.php?id=<?php echo $row->id;?>"></a> Aceptar</button>
+                                      <button type="button" class="btn btn-success"><a href="eliminar.php"></a> Aceptar</button>
                                     </div>
                                   </div>
                                 </div>
