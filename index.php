@@ -285,6 +285,7 @@ if (!isset($user)) {
                   </thead>
                   <tbody id="datos">
                     <?php
+                    
                     foreach ($query as $row) { ?>
                       <tr class="text-center">
                         <th scope="row"><?php echo $row['id']; ?></th>
@@ -381,7 +382,7 @@ if (!isset($user)) {
                                     </div>
                                     <div class="modal-footer mx-auto">
                                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                      <button type="button" class="btn btn-success">Aceptar</button>
+                                      <button type="button" class="btn btn-success"><a href="eliminar.php?id=<?php echo $row->id;?>"></a> Aceptar</button>
                                     </div>
                                   </div>
                                 </div>
