@@ -26,8 +26,7 @@ $fecha_ingreso = $_POST['fecha_ingreso'];
 
 $insertar = "INSERT INTO alumnos (nombre, apellido1, apellido2, fecha_nacimiento, edad, domicilio, correo, telefono, telefono_emergencia, genero, grado, localidad, municipio, taller_libre, taller_externo, fecha_ingreso) VALUES ('$nombre', '$apellido1', '$apellido2', '$fecha_nacimiento', '$edad', '$domicilio, '$email', '$telefono', '$telefonoemergencia', '$genero', '$grado', '$localidad', '$municipio', '$taller_libre', '$taller_externo', '$fecha_ingreso') ";
 
-$query = mysqli_query($conn, $insertar);
-if($query){
+if(mysqli_query($conn, $insertar)){
     echo "<script> alert('Registrado');
     location.href = 'registro.php';
     </script>";
@@ -36,5 +35,4 @@ if($query){
     location.href = 'registro.php';
     </script>";
 }
-
 ?> 
