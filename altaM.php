@@ -15,7 +15,7 @@ if($query){
     location.href = 'instructor.php';
     </script>";
 }else{
-    "<script> alert('No Registrado');
+    echo "<script> alert('No Registrado');
     location.href = 'instructor.php';
     </script>";
 }
