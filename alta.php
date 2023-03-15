@@ -1,12 +1,12 @@
 <?php 
 require "conn.php";
-
-$nom = $_REQUEST["txtnom"];
+/*
+$nom = $_REQUEST["submit"];
 $foto = $_FILES['foto']['name'];
 $ruta = $_FILES['foto']['tmp_name'];
 $destino = "fotos/".$foto;
 copy($ruta,$destino);
-
+*/
 $nombre = $_POST['nombre'];
 $apellido1 = $_POST['apellido1'];
 $apellido2 = $_POST['apellido2'];
@@ -24,7 +24,7 @@ $taller_libre = $_POST['taller_libre'];
 $taller_externo = $_POST['taller_externo'];
 $fecha_ingreso = $_POST['fecha_ingreso'];
 
-$insertar = "INSERT INTO alumnos (foto, nombre, apellido1, apellido2, fecha_nacimiento, edad, domicilio, correo, telefono, telefono_emergencia, genero, grado, localidad, municipio, taller_libre, taller_externo, fecha_ingreso) VALUES ('$destino', '$nombre', '$apellido1', '$apellido2', '$fecha_nacimiento', '$edad', '$domicilio, '$email', '$telefono', '$telefonoemergencia', '$genero', '$grado', '$localidad', '$municipio', '$taller_libre', '$taller_externo', '$fecha_ingreso') ";
+$insertar = "INSERT INTO alumnos (nombre, apellido1, apellido2, fecha_nacimiento, edad, domicilio, correo, telefono, telefono_emergencia, genero, grado, localidad, municipio, taller_libre, taller_externo, fecha_ingreso) VALUES ('$nombre', '$apellido1', '$apellido2', '$fecha_nacimiento', '$edad', '$domicilio, '$email', '$telefono', '$telefonoemergencia', '$genero', '$grado', '$localidad', '$municipio', '$taller_libre', '$taller_externo', '$fecha_ingreso') ";
 
 $query = mysqli_query($conn, $insertar);
 if($query){
@@ -32,7 +32,7 @@ if($query){
     location.href = 'registro.php';
     </script>";
 }else{
-    "<script> alert('No Registrado');
+    echo "<script> alert('No Registrado');
     location.href = 'registro.php';
     </script>";
 }

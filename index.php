@@ -309,13 +309,6 @@ if (!isset($user)) {
                                     </div>
                                     <div class="modal-body">
                                       <form action="alta.php" method="POST">
-                                        <?php
-                                        $id = $_REQUEST['id'];
-                                        include 'conn.php';
-                                        $query = "SELECT * FROM alumnos WHERE id='$id'";
-                                        $resultado = $conn->query($query);
-                                        $row = $resultado->fetch_assoc();
-                                        ?>
                                         <div class="mb-3 text-start">
                                           <label for="name" class="col-form-label">Nombre</label>
                                           <input type="text" class="form-control" name="nombreedi" id="name">

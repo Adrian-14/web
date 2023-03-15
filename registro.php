@@ -174,12 +174,14 @@ if (!isset($user)) {
                             <form action="alta.php" method="POST" enctype="multipart/form-data">
                                 <div class="row">
                                     <h3 class="text-muted">Datos del Alumno</h3>
+                                    <!--
                                     <div class="col-md-12">
                                         <label for="formFile" class="form-label">Foto</label>
                                         <div class="col-sm-12 col-md-6">
-                                            <input type="file" class="form-control" name="foto" required>
+                                            <input type="file" accept="image/*" class="form-control" name="foto" required>
                                         </div>
                                     </div>
+                                    -->
                                 </div>
                                 <br>
                                 <div class="row">
