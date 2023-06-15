@@ -329,6 +329,9 @@ if (!isset($user)) {
                                               <option value="Artes Plasticas Juvenil">Artes Plasticas Juvenil</option>
                                               <option value="Artes Plasticas Infantil">Artes Plasticas Infantil</option>
                                               <option value="Ajedrez">Ajedrez</option>
+                                              <option value="Baby Ballett">Baby Ballett</option>
+                                              <option value="Juvenil Ballett">Juvenil Ballett</option>
+                                              <option value="Baby Ballett">Baby Ballett</option>
                                               <option value="Lengua Otomi">Lengua Otomi</option>
                                               <option value="Banda de Viento">Banda de Viento</option>
                                               <option value="Violin">Violin</option>
